@@ -1,4 +1,4 @@
-# Contributing to Flowpay
+﻿# Contributing to Netless
 
 Thanks for your interest in contributing. This guide covers everything you need to get a development build running and to submit a change.
 
@@ -17,7 +17,7 @@ Thanks for your interest in contributing. This guide covers everything you need 
 
 ```bash
 git clone <repo-url>
-cd Flowpay_v1
+cd Netless_v1
 ```
 
 Create `local.properties` at the repo root (it is gitignored):
@@ -50,7 +50,7 @@ The SMS parser is only as good as its corpus of real bank confirmation formats, 
 ## Project layout
 
 ```
-app/src/main/java/com/flowpay/app/
+app/src/main/java/com/netless/app/
 ├── MainActivity.kt                  # entry screen
 ├── SetupActivity.kt                 # first-run setup
 ├── TestConfigurationActivity.kt     # post-setup USSD/UPI test gate
@@ -96,7 +96,7 @@ CI runs on every push and PR. A green run is required before merge.
 - **Every new `.kt` file needs the licence header** — the first two lines, before the `package` declaration:
   ```kotlin
   // SPDX-License-Identifier: Apache-2.0
-  // Copyright 2026 Flowpay
+  // Copyright 2026 Netless
   ```
   The repo-root `LICENSE` doesn't travel with a file someone copies out, so per-file SPDX is what licence scanners actually read.
 

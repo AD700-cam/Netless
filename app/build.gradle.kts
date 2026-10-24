@@ -1,4 +1,4 @@
-import java.util.Properties
+﻿import java.util.Properties
 
 plugins {
     alias(libs.plugins.android.application)
@@ -29,7 +29,7 @@ fun keystoreProp(key: String): String = keystoreProperties[key] as? String
     )
 
 android {
-    namespace = "com.flowpay.app"
+    namespace = "com.netless.app"
     compileSdk = 35
     // Pinned, not "whatever AGP resolves": aapt2 and zipalign differ between
     // build-tools revisions, so leaving this floating makes the reproducible
@@ -37,7 +37,7 @@ android {
     buildToolsVersion = "35.0.0"
 
     defaultConfig {
-        applicationId = "com.flowpay.app"
+        applicationId = "com.netless.app"
         minSdk = 29
         targetSdk = 35
         // versionCode is monotonic and independent of versionName: builds with
@@ -53,6 +53,7 @@ android {
 
     ksp {
         arg("room.schemaLocation", "$projectDir/schemas")
+        arg("room.generateKotlin", "true")
     }
 
     signingConfigs {
@@ -174,11 +175,11 @@ kover {
         filters {
             includes {
                 packages(
-                    "com.flowpay.app.payment",
-                    "com.flowpay.app.payment.sms",
-                    "com.flowpay.app.telephony"
+                    "com.netless.app.payment",
+                    "com.netless.app.payment.sms",
+                    "com.netless.app.telephony"
                 )
-                classes("com.flowpay.app.helpers.TransactionDetector*")
+                classes("com.netless.app.helpers.TransactionDetector*")
             }
         }
         verify {

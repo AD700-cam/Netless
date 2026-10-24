@@ -1,6 +1,6 @@
-# Security Policy
+﻿# Security Policy
 
-Flowpay handles UPI 123Pay payment flows, USSD dialing, and SMS parsing. Please treat security issues with appropriate care: **do not file public GitHub issues for vulnerabilities.**
+Netless handles UPI 123Pay payment flows, USSD dialing, and SMS parsing. Please treat security issues with appropriate care: **do not file public GitHub issues for vulnerabilities.**
 
 ## Supported versions
 
@@ -17,10 +17,10 @@ are not backported — update to the newest release.
 
 **No APK has been published.** This repository distributes source only —
 build it yourself with [Running it](README.md#running-it). Any APK you
-encounter claiming to be Flowpay did not come from here.
+encounter claiming to be Netless did not come from here.
 
 If a signed build is ever published, the signing certificate is the trust
-anchor. Fake UPI apps are common in India, and an APK claiming to be Flowpay
+anchor. Fake UPI apps are common in India, and an APK claiming to be Netless
 can come from anywhere; the fingerprint below is how you would tell. It is
 committed now, ahead of any release, so it cannot be back-dated later.
 
@@ -28,13 +28,13 @@ committed now, ahead of any release, so it cannot be back-dated later.
 Release signing certificate SHA-256:
   64:28:F5:18:05:90:8F:85:2F:A3:63:76:A4:D2:A9:53:31:D1:1D:0A:03:DC:16:12:25:06:EA:E5:D3:68:A8:82
 
-Subject: CN=Flowpay, O=Flowpay, L=Bengaluru, C=IN
+Subject: CN=Netless, O=Netless, L=Bengaluru, C=IN
 ```
 
 Check any APK against it:
 
 ```bash
-apksigner verify --print-certs flowpay-vX.Y.Z.apk
+apksigner verify --print-certs netless-vX.Y.Z.apk
 ```
 
 Compare against the fingerprint committed **here**, not against the release
@@ -50,9 +50,9 @@ Building from source remains fully supported and needs none of this — see
 
 ## Reporting a vulnerability
 
-Email **`flowpay28@gmail.com`** with the subject line:
+Email **`netlesspay@gmail.com`** with the subject line:
 
-> `Flowpay UPI — Security report — <one-line summary>`
+> `Netless UPI — Security report — <one-line summary>`
 
 Please include:
 
@@ -97,7 +97,7 @@ What the app stores, where, and for how long:
 
 | Data | Where | Lifetime | Leaves the device? |
 |------|-------|----------|--------------------|
-| Transaction rows (amount, status, bank, bank ref, counterparty name, privacy-safe summary) | Room DB `flowpay_database`, app-private storage | Until the user deletes them or uninstalls | **Never** — excluded from cloud backup and device transfer (`backup_rules.xml`, `data_extraction_rules.xml`) |
+| Transaction rows (amount, status, bank, bank ref, counterparty name, privacy-safe summary) | Room DB `netless_database`, app-private storage | Until the user deletes them or uninstalls | **Never** — excluded from cloud backup and device transfer (`backup_rules.xml`, `data_extraction_rules.xml`) |
 | Raw bank SMS bodies | **Not stored** (since schema v3) | — | The verbatim SMS stays in the user's SMS inbox app only |
 | Active payment-operation window (expected amount, recipient number, ~10-min deadline) | `payment_operation` SharedPreferences | Cleared on confirmation or timeout | Never — excluded from backup |
 | UPI PIN | **Never seen by the app** — entered into the bank's IVR/dialer flow | — | — |

@@ -2,9 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="#F8FAFC"
     android:fitsSystemWindows="true">
 
     <!-- The whole screen — status, amount, card AND the action button — is one
@@ -92,7 +93,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="32dp"
                     android:text="@string/payment_status_success"
-                    android:textColor="@color/transaction_primary"
+                    android:textColor="#0F172A"
                     android:textSize="24sp"
                     android:fontFamily="sans-serif-medium" />
 
@@ -105,7 +106,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     tools:text="₹1,250.00"
-                    android:textColor="@color/flowpay_green"
+                    android:textColor="@color/overlay_emerald"
                     android:textSize="36sp"
                     android:fontFamily="sans-serif-bold" />
 
@@ -138,9 +139,9 @@
                 android:layout_marginTop="28dp"
                 android:layout_marginStart="24dp"
                 android:layout_marginEnd="24dp"
-                app:cardBackgroundColor="@color/surface_deep_dark"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="0dp">
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="2dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -189,6 +190,7 @@
                         android:layout_marginBottom="16dp">
 
                         <TextView
+                            android:id="@+id/tv_bank_label"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/label_bank"
@@ -214,9 +216,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
+                        android:gravity="center_vertical"
                         android:layout_marginBottom="16dp">
 
                         <TextView
+                            android:id="@+id/tv_ref_label"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/label_bank_reference"
@@ -230,6 +234,7 @@
                             android:layout_weight="1"
                             android:gravity="end"
                             android:layout_marginStart="12dp"
+                            android:layout_marginEnd="6dp"
                             tools:text="TXN123456"
                             android:textColor="@android:color/white"
                             android:textSize="14sp"
@@ -237,7 +242,20 @@
                             android:ellipsize="middle"
                             android:maxLines="1" />
 
+                        <TextView
+                            android:id="@+id/btn_copy_ref"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/action_copy_ref"
+                            android:textColor="@color/accent_blue_vibrant"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:padding="4dp" />
+
                     </LinearLayout>
+
 
                     <!-- Date Time Row -->
                     <LinearLayout
@@ -247,6 +265,7 @@
                         android:layout_marginBottom="16dp">
 
                         <TextView
+                            android:id="@+id/tv_date_time_label"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/label_date_time"
@@ -276,6 +295,7 @@
                         android:visibility="gone">
 
                         <TextView
+                            android:id="@+id/tv_upi_id_label"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/label_upi_id"

@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- White base with high opacity for blur effect -->
+    <!-- Base dark slate frosted glass -->
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="#F2FFFFFF" /> <!-- 95% white -->
-            <corners android:radius="28dp" />
+            <solid android:color="#F20B0F17" />
+            <corners android:radius="24dp" />
         </shape>
     </item>
     
-    <!-- Subtle gradient for depth -->
+    <!-- Subtle cyan-emerald gradient aura -->
     <item>
         <shape android:shape="rectangle">
             <gradient
-                android:startColor="#0AFFFFFF"
-                android:endColor="#00FFFFFF"
-                android:angle="90" />
-            <corners android:radius="28dp" />
+                android:startColor="#1A38BDF8"
+                android:centerColor="#0D00E5FF"
+                android:endColor="#0810B981"
+                android:angle="135" />
+            <corners android:radius="24dp" />
         </shape>
     </item>
     
-    <!-- Soft border -->
+    <!-- Glowing neon glass border -->
     <item>
         <shape android:shape="rectangle">
             <stroke
-                android:width="1dp"
-                android:color="#33FFFFFF" />
-            <corners android:radius="28dp" />
+                android:width="1.5dp"
+                android:color="#4D38BDF8" />
+            <corners android:radius="24dp" />
         </shape>
     </item>
 </layer-list>

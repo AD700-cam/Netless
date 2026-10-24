@@ -248,7 +248,92 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Hidden: Terminate Button -->
+    <!-- Automated Verification Indicator (Replaces manual completed payment button) -->
+    <LinearLayout
+        android:id="@+id/layoutWaitingActions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/white_card_bg"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="16dp"
+            android:elevation="4dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ProgressBar
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:indeterminate="true"
+                    android:indeterminateTint="#0284C7"
+                    android:layout_marginEnd="10dp" />
+
+                <TextView
+                    android:id="@+id/tvAutoVerifyTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qr_auto_verifying_payment"
+                    android:textColor="@color/black"
+                    android:textSize="14.5sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvAutoVerifySub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/qr_auto_verifying_sub"
+                android:textColor="#64748B"
+                android:textSize="11.5sp"
+                android:layout_marginTop="4dp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnViewRecentPayments"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/button_gradient_bg"
+            android:text="@string/qr_btn_view_recent_payments"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_marginTop="12dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnCancelPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:text="@string/qr_btn_cancel_payment"
+            android:textColor="#EF4444"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_marginTop="6dp" />
+    </LinearLayout>
+
+    <!-- Hidden Fallback: Terminate Button -->
     <ImageButton
         android:id="@+id/btnTerminate"
         android:layout_width="56dp"

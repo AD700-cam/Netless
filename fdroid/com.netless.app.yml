@@ -1,0 +1,33 @@
+Categories:
+  - Finance
+  - Phone & SMS
+License: Apache-2.0
+AuthorName: Netless
+SourceCode: https://github.com/AD700-cam/Netless
+IssueTracker: https://github.com/AD700-cam/Netless/issues
+Changelog: https://github.com/AD700-cam/Netless/blob/main/CHANGELOG.md
+
+AutoName: Netless
+Summary: Offline UPI payments using USSD and UPI 123Pay rails
+Description: |-
+  Netless brings UPI payments to users with no internet connection, using
+  *99# USSD and UPI 123Pay (IVR) rails on Indian SIMs. It runs completely
+  offline with no server, no internet permission, and zero analytics.
+
+RepoType: git
+Repo: https://github.com/AD700-cam/Netless.git
+
+Builds:
+  - versionName: 1.0.0
+    versionCode: 5
+    commit: v1.0.0
+    subdir: app
+    gradle:
+      - yes
+    gradleprops:
+      - allowUnsigned=true
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.0
+CurrentVersionCode: 5

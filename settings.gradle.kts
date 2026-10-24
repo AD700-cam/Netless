@@ -14,5 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Flowpay"
+rootProject.name = "Netless"
 include(":app")

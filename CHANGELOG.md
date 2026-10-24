@@ -1,4 +1,4 @@
-# Changelog
+﻿# Changelog
 
 All notable changes to this project are documented in this file.
 
@@ -86,7 +86,7 @@ The first public **source** release: the code is opened, and that is the whole
 of it. No APK is published and no build is distributed — you build it yourself,
 per [Running it](README.md#running-it).
 
-Flowpay could not go on Google Play in any case, because its SMS-permission
+Netless could not go on Google Play in any case, because its SMS-permission
 usage falls outside Play's restricted-permission policy.
 
 **The physical-device gate in [docs/RELEASE_CHECKLIST.md](docs/RELEASE_CHECKLIST.md)
@@ -455,7 +455,7 @@ chart that pass; 2.0.0 is where it lands.
 
 ### Added
 - `docs/ARCHITECTURE.md` (system map), `docs/FAQ.md` (trust/permissions Q&A), `docs/TESTING.md` (four-layer verification), `docs/RELEASE_CHECKLIST.md`, `docs/RELEASING.md`.
-- `di/AppContainer`: an explicit, framework-free composition root owned by `FlowpayApplication`.
+- `di/AppContainer`: an explicit, framework-free composition root owned by `NetlessApplication`.
 - `payment/PaymentInputValidator` with unit tests — pure phone/amount validation extracted from `CallManager`.
 - `MainViewModel` carrying Activity↔Compose one-shot events.
 - A curated "good first contributions" list in CONTRIBUTING and a gitleaks secret-scan CI step.

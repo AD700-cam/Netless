@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/dialog_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/bg_zenvest_dialog_light"
+        android:elevation="8dp"
+        android:padding="24dp">
+
+        <!-- Icon Badge Container -->
+        <FrameLayout
+            android:id="@+id/dialog_icon_bg"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/success_badge_bg">
+
+            <ImageView
+                android:id="@+id/dialog_icon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_check_circle"
+                android:importantForAccessibility="no" />
+        </FrameLayout>
+
+        <!-- Dialog Title -->
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notice"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#0F172A"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <!-- Dialog Message -->
+        <TextView
+            android:id="@+id/dialog_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:textSize="14sp"
+            android:textColor="#475569"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Primary Action Button -->
+        <Button
+            android:id="@+id/dialog_button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/btn_zenvest_dialog_light"
+            android:text="@string/action_ok"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</FrameLayout>

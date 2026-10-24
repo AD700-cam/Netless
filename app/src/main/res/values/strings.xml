@@ -1,19 +1,26 @@
 <resources>
-    <string name="app_name">Flowpay</string>
+    <string name="app_name">Netless</string>
     
     <!-- Setup Screen Strings -->
-    <string name="setup_flowpay">Setup Flowpay</string>
+    <string name="setup_netless">Setup Netless</string>
     <string name="configure_upi_payments">Configure your UPI payments</string>
+    <string name="setup_subtitle">Configure your offline payment identity and SIM</string>
+    <string name="setup_step_badge">Step 1 of 2 • Profile &amp; Telephony</string>
+    <string name="profile_title">Your Profile</string>
+    <string name="profile_avatar_title">Choose Avatar</string>
+    <string name="profile_name_label">Display Name</string>
+    <string name="profile_name_hint">Enter your name</string>
     <string name="bank_selection">Bank Selection</string>
     <string name="choose_primary_bank">Choose your primary bank for UPI payments</string>
+    <string name="setup_linked_bank_note">NPCI 123Pay verified rail across all Indian networks</string>
     <string name="sim_card_selection">SIM Card Selection</string>
-    <string name="configure_sim_cards">Configure your SIM cards for USSD payments</string>
     <string name="enable_dual_sim">Enable Dual SIM support</string>
     <string name="secondary_sim">Secondary SIM</string>
     <string name="complete_setup">Complete Setup</string>
     <string name="disclaimer">Disclaimer</string>
-    <string name="disclaimer_summary">Flowpay never touches your money or your UPI PIN. It only dials your bank\'s *99# / UPI 123 flow for you. Tap to read the full disclaimer.</string>
-    <string name="disclaimer_text">Flowpay is a free, open-source app. It is not a bank, wallet, or payment processor, and it never holds, moves, or has access to your money.\n\nAll Flowpay does is dial for you. It automates your bank\'s *99# / UPI 123 (UPI 123PAY) menu. Every payment is authorised and processed directly by you, your bank, and NPCI over your mobile network, exactly as if you had dialled it yourself. Flowpay is not affiliated with or endorsed by NPCI or any bank.\n\nYour UPI PIN never touches Flowpay. The app does not use Android accessibility services, screen reading, or any form of input capture. You enter your PIN only inside your bank\'s own *99# / IVR flow, where Flowpay cannot see it, intercept it, or store it.\n\nYour data stays on your device. Flowpay reads incoming bank SMS only while a payment is in progress, and only to detect the confirmation. It never uploads your messages, contacts, or transaction history anywhere.\n\nBy continuing, you confirm that you have read and understood this.</string>
+    <string name="disclaimer_summary">• 100% Offline: NPCI 123PAY rail with zero internet required.\n• Bank-Grade Security: UPI PIN is entered directly on the call dialer.\n• Strict Privacy: All transaction receipts remain stored on your device.</string>
+    <string name="disclaimer_text">• 100% Offline (NPCI 123PAY): Netless connects directly to the official 123PAY telephony rail over standard cellular voice. Zero mobile data required.\n\n• Bank-Grade Direct Security: Your secret UPI PIN is entered exclusively on your phone\'s live call keypad. Netless never sees, intercepts, or stores your PIN.\n\n• Strict On-Device Privacy: All transaction records and profiles remain strictly on your local storage. Netless never uploads your financial data.</string>
+
     
     <!-- Bank Names -->
     
@@ -35,10 +42,10 @@
          release builds are minified, so `e.message` there reads as an
          R8-obfuscated class name. The detail belongs in the adjacent
          Log.e(TAG, "…", e) call, which carries the throwable. -->
-    <string name="error_permissions_denied">Some permissions were denied. Flowpay may not work correctly without them.</string>
-    <string name="error_call_permission_denied">Flowpay needs permission to place the call.</string>
+    <string name="error_permissions_denied">Some permissions were denied. Netless may not work correctly without them.</string>
+    <string name="error_call_permission_denied">Netless needs permission to place the call.</string>
     <string name="error_call_failed">Could not start the payment call. Please try again.</string>
-    <string name="error_audio_permission">Flowpay needs permission to adjust call audio.</string>
+    <string name="error_audio_permission">Netless needs permission to adjust call audio.</string>
     <string name="error_audio_lower_failed">Could not lower the call volume.</string>
     <string name="error_audio_restore_failed">Could not restore the call volume.</string>
     <string name="error_qr_scanner_init">Could not open the QR scanner.</string>
@@ -49,7 +56,7 @@
     <string name="error_enter_phone_and_amount">Enter both a phone number and an amount.</string>
     <string name="error_invalid_phone_number">Enter a valid 10-digit phone number.</string>
     <string name="error_invalid_amount">Enter a valid amount.</string>
-    <string name="error_phone_permission_required">Flowpay needs phone permissions to place the payment call.</string>
+    <string name="error_phone_permission_required">Netless needs phone permissions to place the payment call.</string>
     <string name="error_payment_not_started">The payment could not be started. Please try again.</string>
     <string name="error_call_permission_required_ussd">Phone call permission is required to test USSD.</string>
     <string name="error_call_permission_required_payments">Phone call permission is required for USSD payments.</string>
@@ -59,6 +66,7 @@
     <string name="error_payment_init_failed">Could not start the payment. Please try again.</string>
     <string name="error_unexpected">Something went wrong. Please try again.</string>
     <string name="error_camera_init_failed">The camera could not be started.</string>
+    <string name="error_cannot_open_contacts">Unable to open contacts from this screen.</string>
 
     <!-- Transaction-history failures. These reach the screen through
          TransactionViewModel's error banner — the surface that once showed
@@ -79,7 +87,7 @@
     <string name="warn_voice_sim_mismatch">Note: this call will use your default calling SIM (%1$s), which doesn\'t look like the %2$s SIM from setup. If the payment fails, switch your default calling SIM.</string>
 
     <!-- Progress and outcome notices from setup and the connectivity test -->
-    <string name="status_requesting_permissions">Requesting the permissions Flowpay needs…</string>
+    <string name="status_requesting_permissions">Requesting the permissions Netless needs…</string>
     <string name="status_opening_scanner">Opening the QR scanner…</string>
     <string name="status_permissions_granted_ussd">Permissions granted. You can test USSD now.</string>
     <string name="status_setup_complete">Setup complete.</string>
@@ -110,7 +118,7 @@
     <string name="dialog_failed_title">Transaction Failed</string>
     <string name="dialog_failed_message">Your bank reported the payment as failed. Any debited amount is normally reversed automatically — check your bank if it isn\'t.</string>
     <string name="dialog_awaiting_title">Request Sent</string>
-    <string name="dialog_awaiting_message">Your payment request was sent to the UPI service.\n\nIf your bank calls back, press 1 to confirm and enter your UPI PIN. Flowpay will show the result as soon as your bank\'s confirmation SMS arrives.</string>
+    <string name="dialog_awaiting_message">Your payment request was sent to the UPI service.\n\nListen to the call: press 1 to confirm and enter your UPI PIN. Netless will show the result as soon as your bank\'s confirmation SMS arrives.</string>
     <string name="action_ok">OK</string>
     <string name="action_got_it">Got it</string>
     <string name="action_transfer">Transfer</string>
@@ -142,6 +150,7 @@
     <!-- Payment result screen -->
     <string name="payment_status_success">Payment Successful</string>
     <string name="payment_status_failed">Payment Failed</string>
+    <string name="payment_status_cancelled">Payment Cancelled</string>
     <string name="payment_status_needs_review">Check This Payment</string>
     <string name="payment_status_unverified">No Confirmation Received</string>
     <string name="label_bank">Bank</string>
@@ -164,8 +173,9 @@
     <string name="overlay_terminate">Cancel payment</string>
     <string name="overlay_connecting">Connecting to the UPI service…</string>
     <string name="overlay_sending_request">Sending your payment request…</string>
-    <string name="overlay_pin_notice">Flowpay never asks for your UPI PIN. Your bank will call you — enter your PIN on that call.</string>
+    <string name="overlay_pin_notice">Netless never asks for your UPI PIN. Listen to the call: press 1 to confirm and enter your PIN.</string>
     <string name="overlay_request_sent">Request sent. Waiting for your bank\'s confirmation SMS…</string>
+    <string name="overlay_pacing_notice">⚡ Completing in ~40 seconds • Keep call active</string>
     <string name="amount_rupees">₹%1$s</string>
     <string name="percent_format">%1$d%%</string>
     <string name="cd_payment_outgoing">Outgoing</string>
@@ -192,8 +202,41 @@
     <string name="qr_step_enter_amount">2. Enter the amount</string>
     <string name="qr_step_press_one">3. Press one to skip</string>
     <string name="qr_step_enter_pin">4. Enter your pin</string>
-    <string name="qr_step_press_cancel">5. Press cancel to end session</string>
+    <string name="qr_step_press_cancel">5. Dismiss carrier USSD dialog</string>
     <string name="qr_processing">Processing QR code…</string>
+    <string name="qr_auto_verifying_payment">Auto-verifying payment…</string>
+    <string name="qr_auto_verifying_sub">Listening for carrier USSD and bank confirmation</string>
+    <string name="qr_waiting_bank_saved_title">Payment Sent to Bank</string>
+    <string name="qr_waiting_bank_saved_message">Your USSD payment was dispatched. While your bank finishes processing confirmation, this payment has been saved to your Activity.</string>
+    <string name="qr_btn_completed_payment">I\'ve Completed Payment</string>
+    <string name="qr_btn_completed_payment_sub">Wait for Bank Confirmation SMS</string>
+    <string name="qr_btn_view_recent_payments">View in Recent Payments</string>
+    <string name="qr_btn_cancel_payment">Cancel Payment</string>
+    <string name="qr_dialog_cancel_confirm_title">Cancel this payment?</string>
+    <string name="qr_dialog_cancel_confirm_message">If you already entered your secret UPI PIN in the carrier dialer, please wait for the bank confirmation SMS instead of cancelling.</string>
+    <string name="qr_dialog_cancel_confirm_proceed">Yes, Cancel</string>
+    <string name="qr_dialog_cancel_confirm_wait">Wait for Confirmation</string>
+    <string name="testcfg_skip_tests_link">Skip test &amp; enter Netless</string>
+
+    <!-- Sound & Accessibility Settings -->
+    <string name="accessibility_service_description">Automatically observes terminal *99# USSD payment prompts to confirm transactions within milliseconds without requiring manual input or SMS.</string>
+    <string name="ussd_accessibility_prompt_title">Enable Instant Detection</string>
+    <string name="ussd_accessibility_prompt_message">To automatically detect your *99# USSD payment outcome without waiting for slow bank SMS, turn on FlowPay under Accessibility Settings.</string>
+    <string name="ussd_accessibility_prompt_enable">Enable in Settings</string>
+    <string name="ussd_accessibility_prompt_continue">Continue without</string>
+    <string name="settings_sound_title">Payment Sound</string>
+    <string name="settings_sound_subtitle">Play harmonic celebration chime on success</string>
+    <string name="settings_accessibility_title">Automated USSD Detection</string>
+    <string name="settings_accessibility_subtitle">Zero-touch screen confirmation for *99#</string>
+    <string name="settings_analytics_title">Offline Insights</string>
+    <string name="settings_analytics_subtitle">100% on-device payment summary</string>
+    <string name="settings_diagnostics_title">Diagnostic Logs</string>
+    <string name="settings_diagnostics_subtitle">View offline telephony and SMS events</string>
+    <string name="settings_privacy_policy">Privacy Policy</string>
+    <string name="settings_terms_service">Terms of Service</string>
+    <string name="settings_wipe_data_title">Delete Account &amp; Wipe Device Data</string>
+    <string name="settings_wipe_data_subtitle">Permanently delete encrypted database and reset app</string>
+
 
     <!-- Settings screen -->
     <string name="settings_title">Settings</string>
@@ -248,6 +291,7 @@
     <!-- Transaction detail dialog -->
     <string name="detail_title">Transaction Details</string>
     <string name="detail_delete_confirm_title">Delete this transaction?</string>
+    <string name="detail_delete_confirm_body">This removes the record from your history on this device. It cannot be undone and does not affect the actual payment.</string>
     <string name="detail_close">Close</string>
     <string name="detail_label_recipient">Recipient</string>
     <string name="detail_label_phone_number">Phone Number</string>
@@ -268,15 +312,134 @@
     <string name="ussd_dlg_does_not_work">It doesn\'t work for me</string>
 
     <!-- UPI 123 setup progress dialog -->
-    <string name="upi123_dlg_setup_icon_desc">UPI123 Setup</string>
+    <string name="upi123_dlg_setup_icon_desc">123PAY Setup</string>
     <string name="upi123_dlg_close">Close</string>
-    <string name="upi123_dlg_setup_complete_title">Setup Complete?</string>
-    <string name="upi123_dlg_setting_up_title">Setting Up UPI123</string>
-    <string name="upi123_dlg_setup_complete_message">Did you complete the UPI123 setup?\n\nThis enables manual payment entries.</string>
-    <string name="upi123_dlg_ivr_triggered_message">The UPI 123 IVR call has been triggered. Go through the steps it asks you to complete—when you\'re done, end the call and we\'ll ask you to confirm.</string>
-    <string name="upi123_dlg_configuring">Configuring UPI123…</string>
-    <string name="upi123_dlg_not_yet">Not Yet</string>
-    <string name="upi123_dlg_yes">Yes</string>
-    <string name="upi123_dlg_already_set_up">I\'ve already set up UPI 123</string>
+    <string name="upi123_dlg_setup_complete_title">123PAY Test Verification</string>
+    <string name="upi123_dlg_setting_up_title">Testing 123PAY Service</string>
+    <string name="upi123_dlg_setup_complete_message">Did the 123PAY carrier test call connect and play voice prompts on your phone?</string>
+    <string name="upi123_dlg_ivr_triggered_message">Connecting test call to NPCI 123PAY rail on your SIM. Listen to the carrier prompts or wait for the test to complete.</string>
+    <string name="upi123_dlg_configuring">Testing 123PAY Rail Connection…</string>
+    <string name="upi123_dlg_not_yet">No / Retry</string>
+    <string name="upi123_dlg_yes">Yes, Verified</string>
+    <string name="upi123_dlg_already_set_up">I already use 123PAY</string>
+
+    <!-- Jio & Offline QR Payment Dialog Strings -->
+    <string name="qr_dialog_jio_title">Pay with Netless</string>
+    <string name="qr_dialog_enter_amount_title">Enter Amount</string>
+    <string name="qr_dialog_jio_explanation">Jio routes payments via UPI 123Pay voice call. Enter the merchant\'s 10-digit mobile or UPI Number from their standee:</string>
+    <string name="qr_dialog_payee_format">%1$s (%2$s)</string>
+    <string name="qr_dialog_phone_label">Merchant Mobile / UPI Number</string>
+    <string name="qr_dialog_phone_hint">10-digit number</string>
+    <string name="qr_dialog_amount_label">Amount</string>
+    <string name="qr_dialog_amount_hint">Amount in ₹</string>
+    <string name="qr_dialog_pay_button">Pay via Netless</string>
+    <string name="qr_dialog_cancel_button">Cancel</string>
+    <string name="qr_dialog_error_phone">Please enter a valid 10-digit mobile number.</string>
+    <string name="qr_dialog_error_amount">Please enter a valid amount (₹1 – ₹4,999).</string>
+    <string name="qr_status_initiating_123pay">Initiating UPI 123Pay call…</string>
+    <string name="qr_status_processing_payment">Processing payment…</string>
+
+    <!-- Modern UI Strings -->
+    <string name="currency_inr_symbol">₹</string>
+    <string name="home_action_or">OR</string>
+
+    <string name="home_app_name">Netless</string>
+    <string name="home_tagline">Payments Without Internet</string>
+    <string name="home_badge_offline_active">100% Offline • Zero Internet</string>
+    <string name="home_financial_overview">Your Financial Overview</string>
+    <string name="home_welcome_to_netless">Welcome to Netless</string>
+    <string name="home_connected_bank">Connected Bank</string>
+    <string name="home_recent_payments">Recent Payments</string>
+    <string name="home_recent_payments_subtitle">Your latest offline transfers</string>
+    <string name="home_view_all">View All</string>
+
+    <!-- Settings - Dark Mode -->
+    <string name="settings_dark_mode">Dark Mode</string>
+    <string name="settings_dark_mode_subtitle">Pure black balanced theme</string>
+
+    <!-- Zenvest UI Strings -->
+    <string name="nav_home">Home</string>
+    <string name="nav_analytics">Analytics</string>
+    <string name="nav_pay">Pay</string>
+    <string name="nav_activity">Activity</string>
+    <string name="nav_settings">Settings</string>
+    <string name="home_action_send">Send</string>
+    <string name="home_action_receive">Receive</string>
+    <string name="home_action_scan">Scan QR</string>
+    <string name="home_card_balance_label">Your balance</string>
+    <string name="home_card_account_number">Account Number</string>
+    <string name="home_card_offline_limit_label">Offline Cap</string>
+    <string name="home_card_currency_inr">INR</string>
+    <string name="home_transactions_title">Transactions</string>
+    <string name="home_analytics_title">Offline Insights</string>
+    <string name="home_analytics_offline_success_rate">100% Offline Delivery</string>
+    <string name="home_analytics_total_transacted">Total Transacted</string>
+    <string name="home_analytics_zero_data_saved">Zero Cellular Data Required</string>
+
+    <string name="home_loading_transactions">Loading transactions…</string>
+    <string name="home_failed_load_transactions">Failed to load transactions</string>
+    <string name="home_retry">Retry</string>
+    <string name="home_no_transactions">No transactions yet</string>
+    <string name="home_no_transactions_sub">Your offline payment history will appear here</string>
+    <string name="home_action_scan_subtitle">Dial *99# / Scan QR</string>
+    <string name="home_action_pay_contact">Pay Contact</string>
+    <string name="home_action_pay_subtitle">Voice IVR 123Pay</string>
+    <string name="home_action_setup_ivr">Set up UPI 123 IVR</string>
+    <string name="home_pay_contact_title">Pay Contact</string>
+    <string name="home_pay_contact_sending_to">Sending to: %1$s</string>
+    <string name="home_quick_amounts_title">Quick Amount</string>
+    <string name="home_amount_chip_100">₹100</string>
+    <string name="home_amount_chip_200">₹200</string>
+    <string name="home_amount_chip_500">₹500</string>
+    <string name="home_amount_chip_1000">₹1000</string>
+    <string name="home_amount_chip_2000">₹2000</string>
+    <string name="home_perm_contacts_title">Contacts Permission</string>
+    <string name="home_perm_contacts_msg">Netless needs access to your contacts so you can pick a recipient by name instead of typing their number.</string>
+    <string name="home_perm_overlay_title">Overlay Permission</string>
+    <string name="home_perm_overlay_msg">Netless needs overlay permission to show a payment UI anchor during the call. This keeps your transaction details visible while the call is in progress.</string>
+    <string name="home_perm_sms_title">SMS Permission</string>
+    <string name="home_perm_sms_msg">Netless reads incoming bank SMS only while a payment is in progress, to detect the confirmation. It never reads your inbox and nothing leaves the device.</string>
+    <string name="home_perm_grant">Grant</string>
+    <string name="home_sms_permission_toast">SMS permission is required to detect payment confirmations.</string>
+    <string name="home_overlay_perm_granted_toast">Overlay permission granted. You can now proceed with the transfer.</string>
+    <string name="home_overlay_perm_required_toast">Overlay permission is required for payment protection. Please enable it in Settings.</string>
+
+    <!-- QR Quick Chips -->
+    <string name="qr_chip_50">₹50</string>
+    <string name="qr_chip_100">₹100</string>
+    <string name="qr_chip_200">₹200</string>
+    <string name="qr_chip_500">₹500</string>
+    <string name="qr_chip_1000">₹1000</string>
+    <string name="amount_val_50">50</string>
+    <string name="amount_val_100">100</string>
+    <string name="amount_val_200">200</string>
+    <string name="amount_val_500">500</string>
+    <string name="amount_val_1000">1000</string>
+
+    <!-- History Filters -->
+    <string name="history_filter_all">All</string>
+    <string name="history_filter_success">Success</string>
+    <string name="history_filter_pending">Pending</string>
+    <string name="history_filter_failed">Failed</string>
+    <string name="history_no_matches">No matching transactions found</string>
+    <string name="history_try_search">Try searching with a different name or number</string>
+    <string name="history_empty_desc">Your offline transactions will appear here</string>
+    <string name="unknown_recipient">Unknown</string>
+
+
+    <!-- Overlay HUD Steps -->
+    <string name="overlay_step_1_title">Step 1</string>
+    <string name="overlay_step_1_desc">Listen to automated voice prompt</string>
+    <string name="overlay_step_2_title">Step 2</string>
+    <string name="overlay_step_2_desc">Press 1 on dialer keypad to confirm</string>
+    <string name="overlay_step_3_title">Step 3</string>
+    <string name="overlay_step_3_desc">Enter secret UPI PIN on keypad</string>
+    <string name="overlay_active_call_indicator">Secure Offline Voice Link</string>
+
+    <!-- Payment Result Activity -->
+    <string name="action_copy">Copy</string>
+    <string name="action_copy_ref">Copy Ref</string>
+    <string name="ref_copied">Bank reference copied to clipboard</string>
 
 </resources>
+

@@ -2,14 +2,17 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="flowpay_green">#FF4CAF50</color>
+    <color name="netless_green">#FF4CAF50</color>
     
     <!-- Setup Screen Colors -->
     <color name="setup_text_secondary">#FF888888</color>
     <color name="setup_text_tertiary">#FF4A4A4A</color>
 
-    <!-- Payment Success Colors -->
-    <color name="transaction_primary">#FF5E97D1</color>
+    <!-- Payment Success Colors (Zenvest / Netless Theme) -->
+    <color name="transaction_primary">#FFFFFFFF</color>
+    <color name="netless_bg_dark">#FF090D16</color>
+    <color name="netless_surface_dark">#FF111827</color>
+    <color name="netless_card_border">#2E38BDF8</color>
 
     <!-- QR Scanner Colors -->
 
@@ -29,12 +32,35 @@
     <color name="divider_dark">#FF333333</color>
     <color name="text_secondary_dark">#FF888888</color>
 
-    <!-- In-call overlay card (light "frosted" surface — its own mini palette) -->
-    <color name="overlay_text_primary">#FF2C2C2C</color>
-    <color name="overlay_text_secondary">#FF757575</color>
-    <color name="overlay_icon_gray">#FF424242</color>
-    <color name="overlay_divider_light">#FFE0E0E0</color>
-    <color name="overlay_alert_red">#FFFF6B6B</color>
+    <!-- In-call overlay card (Zenvest dark frosted glass palette) -->
+    <color name="overlay_text_primary">#FFFFFFFF</color>
+    <color name="overlay_text_secondary">#FF94A3B8</color>
+    <color name="overlay_icon_gray">#FF64748B</color>
+    <color name="overlay_divider_light">#1F38BDF8</color>
+    <color name="overlay_alert_red">#FFEF4444</color>
+    <color name="overlay_bg_dark">#E60B0F17</color>
+    <color name="overlay_card_glass">#591E293B</color>
+    <color name="overlay_card_border">#2E38BDF8</color>
+    <color name="overlay_emerald">#FF10B981</color>
+    <color name="overlay_emerald_dim">#2610B981</color>
+    <color name="overlay_cyan">#FF00E5FF</color>
+    <color name="overlay_step_inactive">#FF475569</color>
+    <color name="overlay_step_inactive_bg">#26334155</color>
     <!-- Backing for the QR scanner's inline "not a valid UPI QR" banner -->
     <color name="scan_error_banner_bg">#F21A1113</color>
+
+    <!-- Additional Modern Dark UI tokens -->
+    <color name="surface_card_border">#FF2E2E32</color>
+    <color name="surface_elevated_dark">#FF222224</color>
+    <color name="chip_bg_dark">#FF26262A</color>
+    <color name="chip_selected_bg">#FF3B82F6</color>
+    <color name="chip_selected_text">#FFFFFFFF</color>
+    <color name="accent_blue_vibrant">#FF3B82F6</color>
+    <color name="accent_cyan">#FF00E5FF</color>
+    <color name="accent_emerald">#FF10B981</color>
+    <color name="status_success_bg">#2610B981</color>
+    <color name="status_error_bg">#26EF4444</color>
+    <color name="status_warning_bg">#26F59E0B</color>
+    <color name="status_neutral_bg">#269E9E9E</color>
 </resources>
+

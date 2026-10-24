@@ -1,0 +1,6 @@
+Initial release:
+• Offline UPI payments via *99# USSD and UPI 123Pay (IVR) rails.
+• CameraX + ZXing QR scanning for offline merchant payments.
+• On-call guide overlay and automated DTMF generation.
+• Bank SMS transaction confirmation parser with zero cloud dependency.
+• Local encrypted database using SQLCipher.
