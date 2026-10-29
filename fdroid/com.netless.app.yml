@@ -20,7 +20,7 @@ Repo: https://github.com/AD700-cam/Netless.git
 Builds:
   - versionName: 1.0.0
     versionCode: 5
-    commit: 06aff1a7fa88608461b0274678d3b1a137bcb595
+    commit: 84e1b56f361b83e606084d7abebd0f95b3ced5dc
     subdir: app
     gradle:
       - yes
