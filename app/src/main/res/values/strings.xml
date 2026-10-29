@@ -441,5 +441,25 @@
     <string name="action_copy_ref">Copy Ref</string>
     <string name="ref_copied">Bank reference copied to clipboard</string>
 
+    <!-- Overlay & Dialog Layout Strings -->
+    <string name="overlay_offline_rail">Offline Rail</string>
+    <string name="cd_close_overlay">Close overlay</string>
+    <string name="overlay_transfer_amount">Transfer Amount</string>
+    <string name="overlay_recipient">Recipient</string>
+    <string name="overlay_step_dial">1. Dial</string>
+    <string name="overlay_step_route">2. Route</string>
+    <string name="overlay_step_payee">3. Payee</string>
+    <string name="overlay_step_pin">4. PIN</string>
+    <string name="overlay_enter_pin_hint">Enter UPI PIN on the dialpad below when prompted.</string>
+    <string name="overlay_cancel_end_call">Cancel &amp; End Call</string>
+    <string name="dialog_default_notice">Notice</string>
+    <string name="dialog_default_message">Message</string>
+    <string name="overlay_time_format">%02ds / 40s</string>
+    <string name="overlay_ivr_step_connected">Connected to NPCI line: 08045163666</string>
+    <string name="overlay_ivr_step_routing">Automated DTMF language and routing in progress...</string>
+    <string name="overlay_ivr_step_confirming">Confirming payee details and transfer amount...</string>
+    <string name="overlay_ivr_step_pin_prompt">👉 Enter your secret UPI PIN on the dialpad below</string>
+    <string name="overlay_ivr_step_completed">IVR completed. Ending call &amp; awaiting bank confirmation...</string>
+
 </resources>
 

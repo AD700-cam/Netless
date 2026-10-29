@@ -273,11 +273,11 @@ class CallOverlayService : Service() {
             is PaymentState.WaitingForVerification -> {
                 cancelProgressPacing()
                 updateTimelineStep(5)
-                overlayView?.findViewById<TextView>(R.id.timeRemainingText)?.text = "Done"
+                overlayView?.findViewById<TextView>(R.id.timeRemainingText)?.text = getString(R.string.action_done)
                 // The request is genuinely through — this is the only thing
                 // that fills the bar.
                 updateOverlayStatus(
-                    status = "Request Sent",
+                    status = getString(R.string.overlay_request_sent),
                     step = getString(R.string.overlay_request_sent),
                     progressFraction = 1f
                 )
@@ -289,7 +289,7 @@ class CallOverlayService : Service() {
             is PaymentState.Success -> {
                 cancelProgressPacing()
                 updateTimelineStep(5)
-                overlayView?.findViewById<TextView>(R.id.timeRemainingText)?.text = "Done"
+                overlayView?.findViewById<TextView>(R.id.timeRemainingText)?.text = getString(R.string.action_done)
                 vibrate()
                 endCallOnConfirmation()
                 // PaymentResultActivity (launched by the SMS pipeline) is the
@@ -549,29 +549,29 @@ class CallOverlayService : Service() {
             override fun run() {
                 inCallSecondsElapsed++
                 val elapsedClamped = inCallSecondsElapsed.coerceAtMost(40)
-                timeRemaining?.text = String.format("%02ds / 40s", elapsedClamped)
+                timeRemaining?.text = getString(R.string.overlay_time_format, elapsedClamped)
 
                 when {
                     inCallSecondsElapsed < 4 -> {
                         updateTimelineStep(1)
-                        stepTextView?.text = "Connected to NPCI line: 08045163666"
+                        stepTextView?.text = getString(R.string.overlay_ivr_step_connected)
                     }
                     inCallSecondsElapsed in 4..14 -> {
                         updateTimelineStep(2)
-                        stepTextView?.text = "Automated DTMF language and routing in progress..."
+                        stepTextView?.text = getString(R.string.overlay_ivr_step_routing)
                     }
                     inCallSecondsElapsed in 15..24 -> {
                         updateTimelineStep(3)
-                        stepTextView?.text = "Confirming payee details and transfer amount..."
+                        stepTextView?.text = getString(R.string.overlay_ivr_step_confirming)
                     }
                     inCallSecondsElapsed in 25..39 -> {
                         updateTimelineStep(4)
-                        stepTextView?.text = "👉 Enter your secret UPI PIN on the dialpad below"
+                        stepTextView?.text = getString(R.string.overlay_ivr_step_pin_prompt)
                     }
                     else -> {
                         // 40s reached: IVR automation complete. Cut the call so network settles & confirmation lands
                         updateTimelineStep(5)
-                        stepTextView?.text = "IVR completed. Ending call & awaiting bank confirmation..."
+                        stepTextView?.text = getString(R.string.overlay_ivr_step_completed)
                         callManager?.restoreCallVolume()
                         val autoCut = runCatching { callManager?.terminateCall() ?: false }.getOrDefault(false)
                         Log.d(TAG, "40 seconds reached: auto-cut IVR call -> $autoCut")
@@ -993,7 +993,7 @@ class CallOverlayService : Service() {
             progressBar?.max = 1000
             progressBar?.progress = 0
             progressPercent?.text = getString(R.string.percent_format, 0)
-            timeRemaining?.text = "00s / 40s"
+            timeRemaining?.text = getString(R.string.overlay_time_format, 0)
             statusText?.text = getString(R.string.overlay_processing_payment)
             stepText?.text = getString(R.string.overlay_connecting)
             updateTimelineStep(1)

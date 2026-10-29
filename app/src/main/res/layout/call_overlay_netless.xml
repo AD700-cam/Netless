@@ -44,11 +44,11 @@
                 android:id="@+id/netlessLogo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Netless"
+                android:text="@string/app_name"
                 android:textSize="17sp"
                 android:textStyle="bold"
                 android:fontFamily="sans-serif-medium"
-                android:textColor="#0F172A"
+                android:textColor="@color/slate_900"
                 android:layout_marginStart="8dp" />
 
             <!-- Offline Rail Tag -->
@@ -56,10 +56,10 @@
                 android:id="@+id/securityBadge"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Offline Rail"
+                android:text="@string/overlay_offline_rail"
                 android:textSize="10sp"
                 android:textStyle="bold"
-                android:textColor="#0284C7"
+                android:textColor="@color/sky_600"
                 android:background="@drawable/overlay_card_light_bg"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="3dp"
@@ -78,9 +78,8 @@
                 android:layout_height="32dp"
                 android:background="@android:color/transparent"
                 android:src="@drawable/ic_close"
-                android:tint="#94A3B8"
-                app:tint="#94A3B8"
-                android:contentDescription="Close overlay" />
+                app:tint="@color/slate_400"
+                android:contentDescription="@string/cd_close_overlay" />
         </LinearLayout>
 
         <!-- Transaction Details Card (Amount & Recipient) -->
@@ -108,15 +107,15 @@
                     android:layout_height="wrap_content"
                     tools:text="₹500"
                     android:textSize="22sp"
-                    android:textColor="#0F172A"
+                    android:textColor="@color/slate_900"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Transfer Amount"
+                    android:text="@string/overlay_transfer_amount"
                     android:textSize="11sp"
-                    android:textColor="#64748B"
+                    android:textColor="@color/slate_500"
                     android:layout_marginTop="1dp" />
             </LinearLayout>
 
@@ -124,7 +123,7 @@
             <View
                 android:layout_width="1dp"
                 android:layout_height="28dp"
-                android:background="#E2E8F0"
+                android:background="@color/slate_200"
                 android:layout_marginHorizontal="12dp" />
 
             <!-- Recipient -->
@@ -140,15 +139,15 @@
                     android:layout_height="wrap_content"
                     tools:text="•••• 9876"
                     android:textSize="17sp"
-                    android:textColor="#0F172A"
+                    android:textColor="@color/slate_900"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Recipient"
+                    android:text="@string/overlay_recipient"
                     android:textSize="11sp"
-                    android:textColor="#64748B"
+                    android:textColor="@color/slate_500"
                     android:layout_marginTop="1dp" />
             </LinearLayout>
         </LinearLayout>
@@ -168,7 +167,7 @@
                 android:layout_weight="1"
                 android:text="@string/overlay_processing_payment"
                 android:textSize="14sp"
-                android:textColor="#0F172A"
+                android:textColor="@color/slate_900"
                 android:textStyle="bold" />
 
             <TextView
@@ -178,7 +177,7 @@
                 tools:text="00s / 40s"
                 android:textSize="11.5sp"
                 android:textStyle="bold"
-                android:textColor="#0284C7"
+                android:textColor="@color/sky_600"
                 android:layout_marginEnd="6dp" />
 
             <TextView
@@ -188,7 +187,7 @@
                 tools:text="0%"
                 android:textSize="11.5sp"
                 android:textStyle="bold"
-                android:textColor="#10B981" />
+                android:textColor="@color/emerald_500" />
         </LinearLayout>
 
         <!-- Pacing Notice (Subtle, clean single line) -->
@@ -198,7 +197,7 @@
             android:layout_height="wrap_content"
             android:text="@string/overlay_pacing_notice"
             android:textSize="10.5sp"
-            android:textColor="#10B981"
+            android:textColor="@color/emerald_500"
             android:textStyle="bold"
             android:layout_marginTop="3dp" />
 
@@ -231,7 +230,7 @@
             android:layout_height="wrap_content"
             android:text="@string/overlay_connecting"
             android:textSize="12sp"
-            android:textColor="#64748B"
+            android:textColor="@color/slate_500"
             android:layout_marginTop="6dp" />
 
         <!-- Sleek Horizontal 4-Stage Step Bar (Clean, simple, non-intrusive) -->
@@ -263,10 +262,10 @@
                     android:id="@+id/step1Title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1. Dial"
+                    android:text="@string/overlay_step_dial"
                     android:textSize="10sp"
                     android:textStyle="bold"
-                    android:textColor="#0F172A"
+                    android:textColor="@color/slate_900"
                     android:layout_marginStart="4dp" />
             </LinearLayout>
 
@@ -274,7 +273,7 @@
                 android:id="@+id/line1to2"
                 android:layout_width="8dp"
                 android:layout_height="1.5dp"
-                android:background="#E2E8F0" />
+                android:background="@color/slate_200" />
 
             <!-- Step 2 -->
             <LinearLayout
@@ -293,10 +292,10 @@
                     android:id="@+id/step2Title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2. Route"
+                    android:text="@string/overlay_step_route"
                     android:textSize="10sp"
                     android:textStyle="bold"
-                    android:textColor="#94A3B8"
+                    android:textColor="@color/slate_400"
                     android:layout_marginStart="4dp" />
             </LinearLayout>
 
@@ -304,7 +303,7 @@
                 android:id="@+id/line2to3"
                 android:layout_width="8dp"
                 android:layout_height="1.5dp"
-                android:background="#E2E8F0" />
+                android:background="@color/slate_200" />
 
             <!-- Step 3 -->
             <LinearLayout
@@ -323,10 +322,10 @@
                     android:id="@+id/step3Title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3. Payee"
+                    android:text="@string/overlay_step_payee"
                     android:textSize="10sp"
                     android:textStyle="bold"
-                    android:textColor="#94A3B8"
+                    android:textColor="@color/slate_400"
                     android:layout_marginStart="4dp" />
             </LinearLayout>
 
@@ -334,7 +333,7 @@
                 android:id="@+id/line3to4"
                 android:layout_width="8dp"
                 android:layout_height="1.5dp"
-                android:background="#E2E8F0" />
+                android:background="@color/slate_200" />
 
             <!-- Step 4 -->
             <LinearLayout
@@ -353,10 +352,10 @@
                     android:id="@+id/step4Title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="4. PIN"
+                    android:text="@string/overlay_step_pin"
                     android:textSize="10sp"
                     android:textStyle="bold"
-                    android:textColor="#94A3B8"
+                    android:textColor="@color/slate_400"
                     android:layout_marginStart="4dp" />
             </LinearLayout>
         </LinearLayout>
@@ -392,17 +391,16 @@
                 android:layout_width="16dp"
                 android:layout_height="16dp"
                 android:src="@drawable/ic_pin_keypad"
-                android:tint="#0284C7"
-                app:tint="#0284C7"
+                app:tint="@color/sky_600"
                 android:importantForAccessibility="no" />
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Enter UPI PIN on the dialpad below when prompted."
+                android:text="@string/overlay_enter_pin_hint"
                 android:textSize="11sp"
-                android:textColor="#0284C7"
+                android:textColor="@color/sky_600"
                 android:layout_marginStart="8dp" />
         </LinearLayout>
 
@@ -423,8 +421,7 @@
                 android:layout_width="14dp"
                 android:layout_height="14dp"
                 android:src="@drawable/ic_volume_off"
-                android:tint="#EF4444"
-                app:tint="#EF4444"
+                app:tint="@color/red_500"
                 android:importantForAccessibility="no" />
 
             <TextView
@@ -433,7 +430,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/overlay_audio_muted"
                 android:textSize="11sp"
-                android:textColor="#EF4444"
+                android:textColor="@color/red_500"
                 android:layout_marginStart="6dp" />
         </LinearLayout>
 
@@ -444,13 +441,13 @@
             android:layout_height="42dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/overlay_button_cancel_light"
-            android:text="Cancel &amp; End Call"
-            android:textColor="#DC2626"
+            android:text="@string/overlay_cancel_end_call"
+            android:textColor="@color/red_600"
             android:textAllCaps="false"
             android:textSize="13sp"
             android:textStyle="bold"
             android:drawableStart="@drawable/ic_phone_hangup"
-            android:drawableTint="#DC2626"
+            android:drawableTint="@color/red_600"
             android:drawablePadding="8dp"
             android:gravity="center"
             android:paddingHorizontal="16dp" />

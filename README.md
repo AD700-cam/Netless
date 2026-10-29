@@ -1,154 +1,177 @@
-﻿# Netless - Payments Without Internet
-
-*An Android app that brings UPI payments to users with no internet, using `*99#` USSD and UPI 123Pay (IVR) rails.*
-
-![License](https://img.shields.io/badge/license-Apache_2.0-blue.svg)
-![Status](https://img.shields.io/badge/status-active-brightgreen)
-
-Netless tackles a problem millions of people in India hit every day: UPI payments break the moment the internet drops. It puts a clean, smartphone-native UI on top of the offline payment rails — `*99#` USSD and UPI 123Pay — that already ship on every Indian phone but stay buried behind menus almost nobody uses.
+# Netless — Payments Without Internet
 
 <p align="center">
-  <img src="docs/home.png" alt="Netless home screen — offline UPI payments via Scan QR or Pay Contact" width="300">
+  <img src="fastlane/metadata/android/en-US/images/icon.png" alt="Netless Logo" width="120" style="border-radius: 24px; box-shadow: 0 8px 24px rgba(0,0,0,0.15);" />
+</p>
+
+<p align="center">
+  <b>100% Offline UPI Payments for Android via NPCI UPI 123Pay & *99# USSD Rails</b><br>
+  <i>Send money, scan Bharat/UPI QR codes, and pay contacts anywhere — Zero Cellular Data or Wi-Fi Required.</i>
+</p>
+
+<p align="center">
+  <a href="https://github.com/AD700-cam/Netless/releases/latest"><img src="https://img.shields.io/badge/release-v1.0.0-emerald.svg?style=flat-square&color=10B981" alt="Release v1.0.0"></a>
+  <a href="https://f-droid.org/packages/com.netless.app/"><img src="https://img.shields.io/badge/F--Droid-Inclusion%20Pending-blue.svg?style=flat-square&color=0284C7" alt="F-Droid"></a>
+  <a href="https://www.apache.org/licenses/LICENSE-2.0"><img src="https://img.shields.io/badge/license-Apache_2.0-blue.svg?style=flat-square" alt="Apache 2.0 License"></a>
+  <img src="https://img.shields.io/badge/INTERNET%20Permission-None-success.svg?style=flat-square&color=10B981" alt="Zero Internet Permission">
+  <img src="https://img.shields.io/badge/Platform-Android%2010%2B%20(API%2029%20--%2035)-darkgreen.svg?style=flat-square" alt="Android 10+">
+  <img src="https://img.shields.io/badge/Database-SQLCipher%20AES--256-blueviolet.svg?style=flat-square" alt="SQLCipher Encrypted">
 </p>
 
 ---
 
-## What it does
+## ⚡ Overview
 
-Netless wraps the two offline UPI rails that already exist on every Indian smartphone but are buried behind UX so poor that almost nobody uses them:
+**Netless** is an open-source, privacy-first Android application that enables standard Unified Payments Interface (UPI) transactions when there is **zero internet connectivity**, spotty mobile coverage, or depleted cellular data packs.
 
-- **`*99#` USSD flow** — dial the shortcode, navigate the menu, send money. Netless places the call and gives the user a payment UI to start from.
-- **UPI 123Pay IVR flow** — the call-based payment flow NPCI launched in 2022 for feature phones. Netless builds and validates the DTMF payload, places the call, tracks call state throughout, and keeps an on-screen guide in front of the user for the duration.
+Standard UPI applications (Google Pay, PhonePe, Paytm, BHIM) require continuous, low-latency mobile data to communicate with bank switches. In basement parking lots, rural regions, crowded markets, or during network throttling, transactions inevitably stall or fail.
 
-Each entry point uses the rail that fits it:
-
-- **Scan QR** → dials `*99*1*3#`, the USSD scan-to-pay branch.
-- **Pay Contact** (manual entry) → places a **UPI 123Pay IVR call** to NPCI's published service number, with the payee and amount carried as DTMF.
-
-### Why both rails
-
-`*99#` USSD does not work on Jio. USSD rides the legacy GSM signalling channel, and Jio is an all-IP (VoLTE) network that never carried it — which is precisely the gap NPCI built UPI 123Pay to close.
-
-So Netless ships both. Jio users get the full offline payment experience through the 123Pay IVR rail, with nothing removed and no feature compromise; the USSD rail serves the operators where it does work. Using two rails instead of one is what makes "payments without internet" true for every Indian SIM rather than most of them.
-
-Both rails work without internet. Both are usable today on any Indian SIM with any UPI-linked bank account. No registration with Netless, no server, no account creation.
-
-**Netless uses no accessibility service** — it cannot read your screen or any other app. It never sees your UPI PIN, which is entered directly into your bank's IVR/dialer flow; the app only triggers the dialer and reads bank-confirmation SMS locally on the device.
-
-## Prerequisites
-
-To actually run a transaction end-to-end you need:
-
-- An Android device running **Android 10 (API 29)** or higher
-- An **Indian SIM** in slot 1 (with dual-SIM support optional)
-- A **bank account linked to UPI** via the standard issuer process — same as any UPI app
-
-## Why it was built
-
-The starting question was simple: why do UPI payments fail in low-signal areas, and why does the smartphone UX collapse the moment internet drops out?
-
-The official failure metrics — the publicly reported ~0.7–0.8% technical decline rate — count only transactions that reached a switch and got rejected. They don't count the much larger population: transactions that never initiated because the app couldn't reach the network. That invisible failure population is the actual problem worth solving.
-
-UPI Lite, UPI Lite X, and 123Pay exist on paper as offline rails. In practice, Lite is a wallet (debit-only, no merchant flows for most use cases), Lite X is NFC-only and not meaningfully deployed at consumer scale, and 123Pay's IVR flow is unusable when you're holding a smartphone — nobody listens to voice menus when they could tap a button.
-
-Netless brings these existing offline rails together behind a single smartphone-native UI, so paying without internet is something a user can actually do.
-
-## Engineering notes
-
-Telco-era rails don't give you much to work with. Here's what Netless had to solve:
-
-**USSD is slow by design.** Each `*99#` interaction is a synchronous menu walk over GSM signalling — round trips take roughly a minute, and the menus aren't built for programmatic traversal, so the flow accounts for telco session timeouts and rate limits.
-
-**123Pay's IVR was built for feature phones.** It expects a user holding a phone to their ear, so Netless wraps the dialer hand-off with an on-screen guide to keep the experience coherent on a smartphone.
-
-**The rails don't expose a clean transaction lifecycle.** Neither flow hands the app a reliable success/failure callback, so Netless infers the outcome from the bank's confirmation SMS rather than from call state alone.
-
-
-## Reading the code
-
-```
-app/src/main/java/com/netless/app/
-├── NetlessApplication.kt        # process entry; owns AppContainer
-├── MainActivity.kt              # home screen (Compose), entry to all payment flows
-├── SetupActivity.kt             # first-run setup: bank, primary SIM, disclaimer
-├── TestConfigurationActivity.kt # post-setup connectivity test
-├── payment/                     # ← the money path
-│   ├── PaymentSessionManager.kt # payment lifecycle; the only writer of PaymentState
-│   ├── PaymentWindowObserver.kt # closes the SMS window when a payment is cancelled
-│   ├── Upi123CallStringBuilder.kt # builds + validates the 123Pay DTMF string
-│   ├── InvalidReasonMessages.kt # maps a rejection Reason to user-facing copy
-│   └── sms/SmsTransactionParser.kt # bank-SMS parsing (pure, Context-free)
-├── receivers/
-│   ├── SimpleSMSReceiver.kt     # priority-999 SMS broadcast receiver (PDU extraction)
-│   ├── SmsIngestionPipeline.kt  # shared SMS → transaction pipeline
-│   └── PaymentResultNotifier.kt # guaranteed-reachable outcome notification
-├── helpers/
-│   ├── TransactionDetector.kt   # SMS operation window + dedup
-│   ├── MainActivityHelper.kt    # transfer orchestration + permission gating
-│   └── SetupHelper.kt           # carrier capability + setup state
-├── telephony/CallStateCoordinator.kt # single telephony listener for the app
-├── managers/
-│   ├── CallManager.kt           # places the dial, monitors call state, restores audio
-│   └── PermissionManager.kt     # runtime-permission helper
-├── services/
-│   └── CallOverlayService.kt    # 40s on-call confirmation overlay
-├── features/qr_scanner/         # CameraX + ZXing QR scanner
-├── data/                        # Room entities + DAO, SQLCipher key management
-├── repository/                  # local-only transaction persistence
-├── states/PaymentState.kt       # the payment state machine
-├── di/AppContainer.kt           # hand-rolled DI container
-├── viewmodel/                   # Compose-facing state holders
-├── constants/                   # app-wide constants
-├── utils/CurrencyFormat.kt      # the one place a rupee amount is grouped
-└── ui/                          # remaining Compose screens (transactions, settings, …)
-```
-
-The pieces worth reading if you're poking around:
-
-- **`payment/sms/SmsTransactionParser.kt`** — the bank-SMS parser. The hardest part of the project; every bank's receipt format is different, and it decides whether a payment is reported as succeeded or failed. Pure and Context-free, so it is directly unit-testable.
-- **`payment/PaymentSessionManager.kt`** + **`receivers/SmsIngestionPipeline.kt`** — the payment lifecycle and the path from a received SMS to a stored outcome. Between them they own every rule about what gets recorded.
-- **`helpers/TransactionDetector.kt`** — the SharedPreferences-backed operation window that gates *when* incoming SMS may be inspected at all, plus cross-pipeline dedup. It delegates all message matching to the parser above.
-- **`managers/CallManager.kt`** — handles the dialer interaction for both rails, including call-state monitoring and the timeout/retry logic that ended up being most of the complexity.
-- **`services/CallOverlayService.kt`** — the floating overlay shown during a call so the user has a UI anchor instead of just the system dialer.
-- **`AndroidManifest.xml`** — the permission set is deliberately small and payment-scoped: phone (call + phone state + answer, for the overlay's End-call button), SMS, camera, contacts, overlay, notifications, plus vibrate and modify-audio-settings. No location, no storage, and — notably — **no INTERNET permission**.
-
-## Stack
-
-- **Kotlin 2.1**, Jetpack Compose (Material 3)
-- **Min SDK 29** (Android 10), **target/compile SDK 35**
-- **Local-only persistence** in SQLite via Room
-- **QR scanning** via ZXing (`com.google.zxing:core`, Apache-2.0) + CameraX
-- No backend, no analytics, no telemetry, no third-party SDKs that talk to the internet
-
-## Running it
-
-```bash
-git clone https://github.com/Netlessup/Netless_v1.git
-cd Netless_v1
-echo "sdk.dir=$ANDROID_HOME" > local.properties
-./gradlew installDebug
-```
-
-That's it. The build is self-contained — every dependency comes from public Maven repos.
-
-First launch routes through Setup → connectivity test → home screen.
-
-If you want to skim the code without running it, the build also works without an Android device — `./gradlew assembleDebug` produces a working APK in `app/build/outputs/apk/debug/`.
-
-**Signed release build:** copy `keystore.properties.example` to `keystore.properties`, fill in your signing-key details, then run `./gradlew assembleRelease`. The `keystore.properties` file and any `*.jks`/`*.keystore` files are gitignored, so signing material is never committed. Without a keystore, `assembleRelease` stops rather than handing you an unsigned, uninstallable APK — pass `-PallowUnsigned` if that's what you actually want.
-
-**No APK is published here** — this repo ships source, and building it yourself is the supported path. The release signing certificate's SHA-256 fingerprint is nonetheless committed in [SECURITY.md](SECURITY.md), ahead of any release, so that if a signed build ever appears you can check it with `apksigner verify --print-certs <apk>` against a fingerprint that predates it. Any APK claiming to be Netless today did not come from this project.
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for code style and PR conventions, [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for how the system fits together, [docs/FAQ.md](docs/FAQ.md) for the trust/permissions questions, [docs/TESTING.md](docs/TESTING.md) for how outcomes are verified, [SECURITY.md](SECURITY.md) for vulnerability disclosure, [CHANGELOG.md](CHANGELOG.md) for release history, [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for community standards, and [LEGAL.md](LEGAL.md) for the full terms.
-
-## License
-
-Apache License 2.0 — see [LICENSE](LICENSE) and [NOTICE](NOTICE).
-
-You may use, modify, and redistribute this code under the terms of the Apache License 2.0. The license includes an explicit patent grant. There is no warranty of any kind.
+Netless eliminates this dependency by wrapping National Payments Corporation of India (NPCI) official telecommunication-grade offline payment rails behind a modern, smartphone-native interface:
+1. **NPCI UPI 123Pay (Telephony Voice IVR)**: Automated DTMF dialing and structured call management designed to work on all cellular networks including 4G/5G VoLTE (e.g., Reliance Jio).
+2. ***99# USSD Infrastructure**: Carrier-level GSM signaling rail for fast payment automation on Airtel, Vi, and BSNL.
 
 ---
 
-## Legal
+## 📱 Screenshots
 
-Full terms — no warranty, no affiliation with any bank or telecom, liability, and compliance — are in [LEGAL.md](LEGAL.md). By using, building, modifying, redistributing, or otherwise interacting with this software, you acknowledge that you have read, understood, and agreed to those terms.
+<p align="center">
+  <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/1_home.png" alt="Netless Home Screen" width="270" style="margin: 8px; border-radius: 12px; border: 1px solid #e2e8f0;" />
+</p>
+
+---
+
+## 🌟 Key Features
+
+- **📶 100% Offline Payment Execution**: Operates exclusively over cellular voice and GSM signaling channels. Not a single internet packet is sent or received.
+- **📷 Instant On-Device QR Scanner**: High-performance camera scanner powered by CameraX and ZXing that parses standard Bharat and UPI QR codes entirely on your phone.
+- **🔄 Intelligent Dual-Rail Architecture**:
+  - **Jio SIMs (All-IP VoLTE)**: Automatically routes through NPCI UPI 123Pay Voice IVR, overcoming Jio's lack of GSM USSD support.
+  - **Airtel / Vi / BSNL SIMs**: Direct execution via `*99*1*3#` USSD rapid payment branch.
+- **🎙️ Real-Time Call HUD Overlay**: An elegant floating HUD overlay stays with you during automated IVR calls, tracking each stage (*Dialing → Routing → Payee → PIN Confirmation*) so you never lose context.
+- **🔒 Zero Internet Permission**: Verified by `AndroidManifest.xml` — `android.permission.INTERNET` is completely absent from the codebase. The app cannot transmit your data externally even if it wanted to.
+- **🛡️ Total PIN Isolation**: Netless never prompts for, reads, or stores your secret UPI PIN. PIN entry happens strictly on the encrypted hardware dialer or carrier USSD prompt.
+- **🗄️ SQLCipher AES-256 On-Device Storage**: All transaction histories and logs are encrypted locally with hardware-backed keystore integration.
+- **⚡ Optional Instant Detection Accessibility Service**: Seamlessly reads carrier USSD dialog results on-device without waiting for delayed SMS delivery.
+
+---
+
+## 🏗️ Architecture & How It Works
+
+```mermaid
+graph TD
+    A[Scan UPI QR Code / Manual Payee] --> B[Netless Core Engine]
+    B --> C{SIM Carrier Detection}
+    C -->|Reliance Jio / VoLTE| D[NPCI UPI 123Pay IVR Rail]
+    C -->|Airtel / Vi / BSNL| E[*99# USSD Rail]
+    D --> F[Cellular Voice Link]
+    E --> G[GSM Signalling Link]
+    F --> H[NPCI Central Financial Switch]
+    G --> H
+    H --> I[Issuer Bank Settlement]
+    I --> J[Encrypted Confirmation SMS]
+    J --> K[Netless Local Ingestion Pipeline]
+    K --> L[Local SQLCipher Encrypted DB]
+    L --> M[Payment Confirmed Screen]
+```
+
+### Why Both Rails Are Essential
+
+| Feature | *99# USSD Rail | UPI 123Pay IVR Rail | Standard Online UPI |
+| :--- | :--- | :--- | :--- |
+| **Carrier Compatibility** | Airtel, Vi, BSNL | **All Carriers (including Jio)** | Requires Internet |
+| **Network Type Required** | 2G / GSM Signaling | 2G / 3G / 4G / 5G VoLTE | 4G / 5G / Wi-Fi |
+| **Internet Dependency** | **Zero** | **Zero** | 100% Required |
+| **Transaction Speed** | ~40–60 seconds | ~30–45 seconds | ~5–10 seconds |
+| **Privacy & Telemetry** | **Zero Cloud Tracking** | **Zero Cloud Tracking** | Heavily Profiled |
+
+---
+
+## 🔒 Security & Privacy Model
+
+1. **No Network Socket**: The application does not declare the `android.permission.INTERNET` permission. Android OS physically forbids the application from establishing outbound socket connections.
+2. **Encrypted Storage**: Room database is encrypted with SQLCipher using a 256-bit AES key generated and stored inside the Android KeyStore.
+3. **SMS Ingestion Scope**: Incoming SMS messages are inspected strictly during an active 40-second transaction window. Netless filters strictly for recognized bank handle headers and never reads personal messages.
+4. **Reproducible Builds**: Netless is configured for reproducible builds to guarantee that the distributed binary exactly matches the public source code.
+
+---
+
+## 📦 Installation
+
+### Option 1: F-Droid (Recommended)
+Netless is currently submitted for inclusion in the official F-Droid repository.
+*F-Droid Repository URL coming soon.*
+
+### Option 2: Direct GitHub Release / Obtainium
+You can download the verified, signed production APK directly from GitHub Releases:
+1. Navigate to [Releases](https://github.com/AD700-cam/Netless/releases/latest).
+2. Download `app-release.apk`.
+3. Verify the SHA-256 fingerprint:
+   ```bash
+   apksigner verify --print-certs app-release.apk
+   ```
+4. Install directly or track automatic updates using [Obtainium](https://github.com/ImranR98/Obtainium).
+
+---
+
+## 🛠️ Building From Source
+
+### Prerequisites
+- Android Studio Ladybug | Hedgehog or Android SDK command-line tools.
+- JDK 17 (Eclipse Temurin or Android Studio JBR).
+- Android SDK Platforms 29 through 35.
+
+### Steps
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/AD700-cam/Netless.git
+cd Netless
+
+# 2. Set up local Android SDK path (if not defined in environment)
+echo "sdk.dir=$ANDROID_HOME" > local.properties
+
+# 3. Build debug APK
+./gradlew assembleDebug
+
+# 4. Run unit tests
+./gradlew test
+
+# 5. Build signed production release
+# Copy keystore template and configure credentials:
+cp keystore.properties.example keystore.properties
+./gradlew assembleRelease
+```
+
+The resulting signed APK will be generated at:
+`app/build/outputs/apk/release/app-release.apk`
+
+---
+
+## 📂 Project Structure
+
+```
+app/src/main/java/com/netless/app/
+├── NetlessApplication.kt              # App process entry & dependency container
+├── MainActivity.kt                    # Modern Compose dashboard & quick actions
+├── SetupActivity.kt                   # Carrier & bank account registration
+├── features/qr_scanner/               # CameraX & ZXing offline QR engine
+├── payment/
+│   ├── PaymentSessionManager.kt       # State machine orchestrator
+│   ├── Upi123CallStringBuilder.kt     # DTMF builder & validator
+│   └── sms/SmsTransactionParser.kt    # Pure, context-free bank receipt parser
+├── telephony/CallStateCoordinator.kt  # Unified telephony call monitor
+├── services/
+│   ├── CallOverlayService.kt          # Floating interactive HUD during IVR
+│   └── UssdAccessibilityService.kt    # Instant *99# USSD result detection
+├── data/                              # Room + SQLCipher encrypted database
+└── ui/theme/                          # Zenvest design tokens & Material 3 theme
+```
+
+---
+
+## 📄 License & Legal
+
+This project is licensed under the **Apache License 2.0** — see the [LICENSE](LICENSE) and [NOTICE](NOTICE) files for details.
+
+### Disclaimer
+*Netless is an independent open-source software project and is not affiliated with, endorsed by, or sponsored by the National Payments Corporation of India (NPCI), Unified Payments Interface (UPI), Reserve Bank of India (RBI), or any commercial banking institution or telecommunication provider.*

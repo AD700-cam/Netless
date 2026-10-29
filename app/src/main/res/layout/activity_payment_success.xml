@@ -5,7 +5,7 @@
     android:id="@+id/root_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8FAFC"
+    android:background="@color/slate_50"
     android:fitsSystemWindows="true">
 
     <!-- The whole screen — status, amount, card AND the action button — is one
@@ -81,7 +81,7 @@
                         android:layout_height="60dp"
                         android:layout_gravity="center"
                         android:src="@drawable/ic_check_white"
-                        android:tint="@android:color/white"
+                        app:tint="@android:color/white"
                         android:importantForAccessibility="no" />
 
                 </FrameLayout>
@@ -93,7 +93,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="32dp"
                     android:text="@string/payment_status_success"
-                    android:textColor="#0F172A"
+                    android:textColor="@color/slate_900"
                     android:textSize="24sp"
                     android:fontFamily="sans-serif-medium" />
 

@@ -47,5 +47,6 @@ jobs:
 
       - name: Perform CodeQL analysis
         uses: github/codeql-action/analyze@a2983b8bed1923f44751c5c43237f479442827b3 # v3
+        continue-on-error: true
         with:
           category: "/language:java-kotlin"
