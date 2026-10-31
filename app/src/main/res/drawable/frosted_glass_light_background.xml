@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base clean white card surface -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FAFFFFFF" />
+            <corners android:radius="24dp" />
+        </shape>
+    </item>
+
+    <!-- Subtle airy gradient highlight -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#10D8ECF8"
+                android:centerColor="#05FFFFFF"
+                android:endColor="#0810B981"
+                android:angle="135" />
+            <corners android:radius="24dp" />
+        </shape>
+    </item>
+
+    <!-- Subtle border -->
+    <item>
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="1.2dp"
+                android:color="#E2E8F0" />
+            <corners android:radius="24dp" />
+        </shape>
+    </item>
+</layer-list>

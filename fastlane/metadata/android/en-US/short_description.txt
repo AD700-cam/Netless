@@ -1,0 +1,1 @@
+Offline UPI payments using *99# USSD and UPI 123Pay rails.

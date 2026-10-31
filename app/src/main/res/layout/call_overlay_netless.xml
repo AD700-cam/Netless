@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:clickable="false"
+    android:focusable="false"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="12dp"
+    android:clipToPadding="false">
+
+    <!-- Main overlay card with Zenvest clean styling -->
+    <LinearLayout
+        android:id="@+id/overlayContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/frosted_glass_light_background"
+        android:elevation="12dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="16dp">
+
+        <!-- Top Header: Logo, Brand Wordmark, Offline Rail Badge, and Close Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Netless Logo Icon -->
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_netless_logo"
+                android:importantForAccessibility="no" />
+
+            <!-- Brand Name (NET in slate/white, LESS in emerald) -->
+            <TextView
+                android:id="@+id/netlessLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/slate_900"
+                android:layout_marginStart="8dp" />
+
+            <!-- Offline Rail Tag -->
+            <TextView
+                android:id="@+id/securityBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/overlay_offline_rail"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="@color/sky_600"
+                android:background="@drawable/overlay_card_light_bg"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="3dp"
+                android:layout_marginStart="8dp" />
+
+            <!-- Flexible Space -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <!-- Close / Dismiss Button -->
+            <ImageButton
+                android:id="@+id/btnToggleCollapse"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_close"
+                app:tint="@color/slate_400"
+                android:contentDescription="@string/cd_close_overlay" />
+        </LinearLayout>
+
+        <!-- Transaction Details Card (Amount & Recipient) -->
+        <LinearLayout
+            android:id="@+id/detailsCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/overlay_card_light_bg"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="12dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical">
+
+            <!-- Amount -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/amountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="₹500"
+                    android:textSize="22sp"
+                    android:textColor="@color/slate_900"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/overlay_transfer_amount"
+                    android:textSize="11sp"
+                    android:textColor="@color/slate_500"
+                    android:layout_marginTop="1dp" />
+            </LinearLayout>
+
+            <!-- Vertical Divider -->
+            <View
+                android:layout_width="1dp"
+                android:layout_height="28dp"
+                android:background="@color/slate_200"
+                android:layout_marginHorizontal="12dp" />
+
+            <!-- Recipient -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/currentStepText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="•••• 9876"
+                    android:textSize="17sp"
+                    android:textColor="@color/slate_900"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/overlay_recipient"
+                    android:textSize="11sp"
+                    android:textColor="@color/slate_500"
+                    android:layout_marginTop="1dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Live Status & Elapsed Progress Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/overlay_processing_payment"
+                android:textSize="14sp"
+                android:textColor="@color/slate_900"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/timeRemainingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="00s / 40s"
+                android:textSize="11.5sp"
+                android:textStyle="bold"
+                android:textColor="@color/sky_600"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:id="@+id/progressPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="0%"
+                android:textSize="11.5sp"
+                android:textStyle="bold"
+                android:textColor="@color/emerald_500" />
+        </LinearLayout>
+
+        <!-- Pacing Notice (Subtle, clean single line) -->
+        <TextView
+            android:id="@+id/pacingNoticeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overlay_pacing_notice"
+            android:textSize="10.5sp"
+            android:textColor="@color/emerald_500"
+            android:textStyle="bold"
+            android:layout_marginTop="3dp" />
+
+        <!-- Clean 6dp Horizontal Progress Bar -->
+        <FrameLayout
+            android:id="@+id/progressContainer"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginTop="6dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/overlay_progress_track_light" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:max="1000"
+                android:progress="0"
+                android:progressDrawable="@drawable/overlay_progress_bar_light" />
+        </FrameLayout>
+
+        <!-- Current Step Subtitle -->
+        <TextView
+            android:id="@+id/stepText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overlay_connecting"
+            android:textSize="12sp"
+            android:textColor="@color/slate_500"
+            android:layout_marginTop="6dp" />
+
+        <!-- Sleek Horizontal 4-Stage Step Bar (Clean, simple, non-intrusive) -->
+        <LinearLayout
+            android:id="@+id/layoutIvrSteps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/overlay_card_light_bg"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="8dp"
+            android:layout_marginTop="8dp">
+
+            <!-- Step 1 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/step1Node"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/timeline_step_node_active"
+                    android:importantForAccessibility="no" />
+                <TextView
+                    android:id="@+id/step1Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/overlay_step_dial"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/slate_900"
+                    android:layout_marginStart="4dp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line1to2"
+                android:layout_width="8dp"
+                android:layout_height="1.5dp"
+                android:background="@color/slate_200" />
+
+            <!-- Step 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/step2Node"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/timeline_step_node_pending"
+                    android:importantForAccessibility="no" />
+                <TextView
+                    android:id="@+id/step2Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/overlay_step_route"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/slate_400"
+                    android:layout_marginStart="4dp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line2to3"
+                android:layout_width="8dp"
+                android:layout_height="1.5dp"
+                android:background="@color/slate_200" />
+
+            <!-- Step 3 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/step3Node"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/timeline_step_node_pending"
+                    android:importantForAccessibility="no" />
+                <TextView
+                    android:id="@+id/step3Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/overlay_step_payee"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/slate_400"
+                    android:layout_marginStart="4dp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/line3to4"
+                android:layout_width="8dp"
+                android:layout_height="1.5dp"
+                android:background="@color/slate_200" />
+
+            <!-- Step 4 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/step4Node"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/timeline_step_node_pending"
+                    android:importantForAccessibility="no" />
+                <TextView
+                    android:id="@+id/step4Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/overlay_step_pin"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/slate_400"
+                    android:layout_marginStart="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Hidden container for any backward compatibility IDs expected by CallOverlayService -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone">
+            <TextView android:id="@+id/step1Time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@+id/step1Desc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@+id/step2Time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@+id/step2Desc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@+id/step3Time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@+id/step3Desc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@+id/step4Time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@+id/step4Desc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Dialpad Instruction Banner (Compact & Clean) -->
+        <LinearLayout
+            android:id="@+id/pinPromptCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/overlay_card_light_bg"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="7dp"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_pin_keypad"
+                app:tint="@color/sky_600"
+                android:importantForAccessibility="no" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/overlay_enter_pin_hint"
+                android:textSize="11sp"
+                android:textColor="@color/sky_600"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Volume-lowered indicator -->
+        <LinearLayout
+            android:id="@+id/mutedIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:background="@drawable/muted_pill_bg"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/ic_volume_off"
+                app:tint="@color/red_500"
+                android:importantForAccessibility="no" />
+
+            <TextView
+                android:id="@+id/instructionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/overlay_audio_muted"
+                android:textSize="11sp"
+                android:textColor="@color/red_500"
+                android:layout_marginStart="6dp" />
+        </LinearLayout>
+
+        <!-- Terminate / Hangup Button -->
+        <Button
+            android:id="@+id/terminateButton"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/overlay_button_cancel_light"
+            android:text="@string/overlay_cancel_end_call"
+            android:textColor="@color/red_600"
+            android:textAllCaps="false"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_phone_hangup"
+            android:drawableTint="@color/red_600"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:paddingHorizontal="16dp" />
+
+    </LinearLayout>
+</FrameLayout>

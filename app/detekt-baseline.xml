@@ -1,0 +1,786 @@
+<?xml version="1.0" ?>
+<SmellBaseline>
+  <ManuallySuppressedIssues></ManuallySuppressedIssues>
+  <CurrentIssues>
+    <ID>ArgumentListWrapping:CallOverlayService.kt$CallOverlayService$("#0284C7")</ID>
+    <ID>ArgumentListWrapping:CallOverlayService.kt$CallOverlayService$("#0F172A")</ID>
+    <ID>ArgumentListWrapping:CallOverlayService.kt$CallOverlayService$("#64748B")</ID>
+    <ID>ArgumentListWrapping:CallOverlayService.kt$CallOverlayService$("#94A3B8")</ID>
+    <ID>ArgumentListWrapping:CallOverlayService.kt$CallOverlayService$(this, R.color.overlay_cyan)</ID>
+    <ID>ArgumentListWrapping:CallOverlayService.kt$CallOverlayService$(this, R.color.overlay_step_inactive)</ID>
+    <ID>ArgumentListWrapping:CallOverlayService.kt$CallOverlayService$(this, R.color.overlay_text_primary)</ID>
+    <ID>ArgumentListWrapping:CallOverlayService.kt$CallOverlayService$(this, R.color.overlay_text_secondary)</ID>
+    <ID>ArgumentListWrapping:MainActivity.kt$(0xFF94A3B8)</ID>
+    <ID>ArgumentListWrapping:MainActivity.kt$(0xFFCBD5E1)</ID>
+    <ID>ArgumentListWrapping:MainActivity.kt$(R.string.home_field_amount_hint)</ID>
+    <ID>ArgumentListWrapping:MainActivity.kt$(R.string.home_field_amount_label)</ID>
+    <ID>ArgumentListWrapping:MainActivity.kt$(R.string.home_field_mobile_hint)</ID>
+    <ID>ArgumentListWrapping:MainActivity.kt$(R.string.home_field_mobile_label)</ID>
+    <ID>ArgumentListWrapping:MainActivity.kt$(R.string.home_no_transactions)</ID>
+    <ID>ArgumentListWrapping:MainActivity.kt$(R.string.home_no_transactions_sub)</ID>
+    <ID>ArgumentListWrapping:MainActivity.kt$(stringResource(R.string.home_field_amount_hint), color = if (isDark) NetlessTextGray else ZenvestTextMuted)</ID>
+    <ID>ArgumentListWrapping:MainActivity.kt$(stringResource(R.string.home_field_amount_label), color = if (isDark) NetlessTextLightGray else ZenvestTextSecondary)</ID>
+    <ID>ArgumentListWrapping:MainActivity.kt$(stringResource(R.string.home_field_mobile_hint), color = if (isDark) NetlessTextGray else ZenvestTextMuted)</ID>
+    <ID>ArgumentListWrapping:MainActivity.kt$(stringResource(R.string.home_field_mobile_label), color = if (isDark) NetlessTextLightGray else ZenvestTextSecondary)</ID>
+    <ID>ArgumentListWrapping:QRScannerActivity.kt$QRScannerActivity$("#F8FAFC")</ID>
+    <ID>ArgumentListWrapping:QRScannerActivity.kt$QRScannerActivity$("QRScanner", "Activity destroying with USSD dialed - keeping payment session and SMS detector active!")</ID>
+    <ID>ArgumentListWrapping:QRScannerActivity.kt$QRScannerActivity$(ContextCompat.getColor(this, android.R.color.black))</ID>
+    <ID>ArgumentListWrapping:QRScannerActivity.kt$QRScannerActivity$(android.R.id.content)</ID>
+    <ID>ArgumentListWrapping:QRScannerActivity.kt$QRScannerActivity$(android.graphics.Color.parseColor("#F8FAFC"))</ID>
+    <ID>ArgumentListWrapping:QRScannerActivity.kt$QRScannerActivity$(this, android.R.color.black)</ID>
+    <ID>ArgumentListWrapping:SetupActivity.kt$(0x33000000)</ID>
+    <ID>ArgumentListWrapping:SetupActivity.kt$(0x44FFFFFF)</ID>
+    <ID>ArgumentListWrapping:SetupHelper.kt$SetupHelper.Companion$(Context.TELEPHONY_SERVICE)</ID>
+    <ID>ArgumentListWrapping:SetupHelper.kt$SetupHelper.Companion$(Context.TELEPHONY_SUBSCRIPTION_SERVICE)</ID>
+    <ID>ArgumentListWrapping:TestConfigurationActivity.kt$(step = "1", text = "Dial *99# on your Airtel phone keypad.", isDark = isDark)</ID>
+    <ID>ArgumentListWrapping:TestConfigurationActivity.kt$(step = "2", text = "Reply with '1' to select 'Send Money'.", isDark = isDark)</ID>
+    <ID>ArgumentListWrapping:TestConfigurationActivity.kt$(step = "3", text = "Choose 'Mobile No' or 'UPI ID' and enter payee details.", isDark = isDark)</ID>
+    <ID>ArgumentListWrapping:TestConfigurationActivity.kt$(step = "4", text = "Enter amount and type your secret UPI PIN directly on the screen.", isDark = isDark)</ID>
+    <ID>CommentSpacing:AccentTheme.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:AppConstants.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:AppContainer.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:AppDatabase.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:AvatarTemplates.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:CallStateCoordinator.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:CallStateCoordinatorTest.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:Color.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:ContactPickerDialog.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:ContextExt.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:CurrencyFormat.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:CurrencyFormatTest.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:DatabaseEncryptionMigrator.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:DatabaseKeyManager.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:DatabaseKeyManagerRecoveryTest.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:InvalidReasonMessages.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:MainActivityHelper.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:MainViewModel.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:NetlessApplication.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:NetlessBrandLogo.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:OverlayLogger.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:PaymentDetails.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:PaymentInputValidator.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:PaymentInputValidatorTest.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:PaymentProcessDialog.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:PaymentResultNotifier.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:PaymentSessionManager.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:PaymentSessionManagerTest.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:PaymentState.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:PaymentStatus.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:PaymentWindowObserver.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:PaymentWindowObserverTest.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:PermissionManager.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:PhoneNumberUtils.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:ProfileDialog.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:QRCodeAnalyzer.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:QRCodeAnalyzerDecodeTest.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:QRCodeParser.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:QRCodeParserTest.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:SettingsActivity.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:SimpleSMSReceiver.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:SmsIngestionPipeline.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:SmsIngestionPipelineTest.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:SmsParsingRegexTest.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:SmsTransactionParser.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:SmsTransactionParserTest.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:TestResults.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:Theme.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:Transaction.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:TransactionDao.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:TransactionDetailDialog.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:TransactionDetector.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:TransactionDetectorTest.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:TransactionHistoryActivity.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:TransactionMappingTest.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:TransactionRepository.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:TransactionStatus.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:TransactionViewModel.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:UPIData.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:Upi123CallStringBuilder.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CommentSpacing:Upi123CallStringBuilderTest.kt$// SPDX-License-Identifier: Apache-2.0</ID>
+    <ID>CyclomaticComplexMethod:CallOverlayService.kt$CallOverlayService$private fun createSystemOverlay(phoneNumber: String, amount: String)</ID>
+    <ID>CyclomaticComplexMethod:MainActivity.kt$@Composable fun PayContactDialog( onDismiss: () -&gt; Unit, onConfirm: (String, String, String?) -&gt; Unit )</ID>
+    <ID>CyclomaticComplexMethod:MainActivity.kt$@Composable private fun ZenvestBalanceCard( selectedBankName: String, userPhoneNumber: String = "", isDark: Boolean )</ID>
+    <ID>CyclomaticComplexMethod:MainActivity.kt$@Composable private fun ZenvestTransactionsSheet( recentPayments: List&lt;PaymentDetails&gt;, isLoading: Boolean, error: String?, onSelectPayment: (String) -&gt; Unit, onRetry: () -&gt; Unit, onViewAllClick: () -&gt; Unit, isDark: Boolean )</ID>
+    <ID>CyclomaticComplexMethod:MainActivity.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun MainScreen( onInitiateTransfer: (String, String) -&gt; Unit, onQRScanClick: () -&gt; Unit, onRequestOverlayPermission: () -&gt; Unit )</ID>
+    <ID>CyclomaticComplexMethod:MainActivity.kt$@Suppress("LongMethod") @Composable private fun ScanQrButton( onQRScanClick: () -&gt; Unit, isScanQrReady: Boolean, isScanning: Boolean )</ID>
+    <ID>CyclomaticComplexMethod:NotificationsDialog.kt$@Composable fun NotificationsDialog( selectedBankName: String = "Bank", userPhoneNumber: String = "", onDismiss: () -&gt; Unit )</ID>
+    <ID>CyclomaticComplexMethod:PaymentProcessDialog.kt$@Composable fun PaymentProcessDialog( phoneNumber: String, amount: String, contactName: String? = null, bankName: String = "Punjab National Bank", onStartCall: () -&gt; Unit, onDismiss: () -&gt; Unit )</ID>
+    <ID>CyclomaticComplexMethod:PaymentResultActivity.kt$PaymentResultActivity$private fun loadTransactionData()</ID>
+    <ID>CyclomaticComplexMethod:ProfileDialog.kt$@Composable fun ProfileDialog( userName: String, avatarId: Int, userPhoneNumber: String = "", selectedBankName: String, onSaveProfile: (name: String, avatarId: Int, phoneNumber: String) -&gt; Unit, onDismiss: () -&gt; Unit )</ID>
+    <ID>CyclomaticComplexMethod:SettingsActivity.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun SettingsScreen( viewModel: SettingsViewModel = viewModel(), onBackPressed: () -&gt; Unit, settingsRepository: SettingsRepository? = null, onRequestPermissions: (Array&lt;String&gt;) -&gt; Unit = {}, refreshTrigger: MutableIntState = mutableIntStateOf(0) )</ID>
+    <ID>CyclomaticComplexMethod:SetupActivity.kt$@Composable fun ProfileSection( userName: String, onNameChange: (String) -&gt; Unit, userPhoneNumber: String, onPhoneNumberChange: (String) -&gt; Unit, selectedAvatarId: Int, onSelectAvatar: (Int) -&gt; Unit, isDark: Boolean )</ID>
+    <ID>CyclomaticComplexMethod:SetupActivity.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun BankSelectionSection( banks: List&lt;Pair&lt;String, String&gt;&gt;, selectedBank: String, onBankSelected: (String) -&gt; Unit, isDark: Boolean )</ID>
+    <ID>CyclomaticComplexMethod:SetupActivity.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun SetupScreen(setupHelper: SetupHelper)</ID>
+    <ID>CyclomaticComplexMethod:SetupActivity.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun SimCardSelectionSection( simCarriers: List&lt;Pair&lt;String, String&gt;&gt;, selectedPrimarySim: String, selectedSecondarySim: String, isDualSimEnabled: Boolean, onPrimarySimSelected: (String) -&gt; Unit, onSecondarySimSelected: (String) -&gt; Unit, onDualSimToggled: (Boolean) -&gt; Unit, secondarySimOptions: List&lt;Pair&lt;String, String&gt;&gt;, isDark: Boolean )</ID>
+    <ID>CyclomaticComplexMethod:SetupHelper.kt$SetupHelper.Companion$fun detectPrimaryCarrier(context: Context): String</ID>
+    <ID>CyclomaticComplexMethod:TestConfigurationActivity.kt$@Composable fun TestConfigurationScreen(testHelper: TestConfigurationHelper)</ID>
+    <ID>CyclomaticComplexMethod:TestConfigurationActivity.kt$@Composable private fun ZenvestTestCard( title: String, code: String, description: String, isCompleted: Boolean, isTesting: Boolean, isDark: Boolean, isLocked: Boolean = false, onClick: () -&gt; Unit )</ID>
+    <ID>CyclomaticComplexMethod:TestConfigurationHelper.kt$TestConfigurationHelper$fun initiateCall(callType: CallType)</ID>
+    <ID>CyclomaticComplexMethod:TransactionDetailDialog.kt$@Composable fun TransactionDetailDialog( transaction: Transaction, onDismiss: () -&gt; Unit, onDelete: (() -&gt; Unit)? = null )</ID>
+    <ID>CyclomaticComplexMethod:TransactionHistoryActivity.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun TransactionHistoryScreen( onBackClick: () -&gt; Unit )</ID>
+    <ID>CyclomaticComplexMethod:Upi123ProgressDialog.kt$@Composable private fun Upi123ProgressDialogContent( showConfigurationOptions: Boolean = false, onConfigured: () -&gt; Unit = {}, onNotConfigured: () -&gt; Unit = {}, onDismiss: () -&gt; Unit = {} )</ID>
+    <ID>CyclomaticComplexMethod:UssdProgressDialog.kt$@Composable private fun UssdProgressDialogContent( progressMessage: String, showConfigurationOptions: Boolean = false, onConfigured: () -&gt; Unit = {}, onNotConfigured: () -&gt; Unit = {}, onDismiss: () -&gt; Unit = {}, onDoesNotWork: () -&gt; Unit = {} )</ID>
+    <ID>EmptyFunctionBlock:TestConfigurationActivity.kt$TestConfigurationActivity.&lt;no name provided&gt;${}</ID>
+    <ID>FunctionNaming:AvatarTemplates.kt$@Composable fun AvatarCircle( avatarId: Int, size: Dp = 40.dp, modifier: Modifier = Modifier, isSelected: Boolean = false, onClick: (() -&gt; Unit)? = null )</ID>
+    <ID>FunctionNaming:ContactPickerDialog.kt$@Composable fun ContactItem( contact: Contact, onClick: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:ContactPickerDialog.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun ContactPickerDialog( onDismiss: () -&gt; Unit, onContactSelected: (Contact) -&gt; Unit )</ID>
+    <ID>FunctionNaming:NetlessBrandLogo.kt$@Composable fun NetlessBrandWordmark( isDark: Boolean, modifier: Modifier = Modifier, showLogo: Boolean = true, showSubtitle: Boolean = true )</ID>
+    <ID>FunctionNaming:NetlessBrandLogo.kt$@Composable fun NetlessLogo( size: Dp = 38.dp, modifier: Modifier = Modifier )</ID>
+    <ID>FunctionNaming:PaymentProcessDialog.kt$@Composable fun PaymentProcessDialog( phoneNumber: String, amount: String, contactName: String? = null, bankName: String = "Punjab National Bank", onStartCall: () -&gt; Unit, onDismiss: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:PaymentProcessDialog.kt$@Composable private fun ProcessStepItem( stepNumber: String, timeRange: String, title: String, desc: String, isDark: Boolean, isLast: Boolean = false )</ID>
+    <ID>FunctionNaming:ProfileDialog.kt$@Composable fun ProfileDialog( userName: String, avatarId: Int, userPhoneNumber: String = "", selectedBankName: String, onSaveProfile: (name: String, avatarId: Int, phoneNumber: String) -&gt; Unit, onDismiss: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:SettingsActivity.kt$@Composable fun NetlessSettingsTheme(content: @Composable () -&gt; Unit)</ID>
+    <ID>FunctionNaming:SettingsActivity.kt$@Composable private fun BankPickerDialog( selectedBank: Bank, onBankSelected: (Bank) -&gt; Unit, onDismiss: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:SettingsActivity.kt$@Composable private fun DarkModeRow( isDarkMode: Boolean, onToggle: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:SettingsActivity.kt$@Composable private fun GroupCard(content: @Composable ColumnScope.() -&gt; Unit)</ID>
+    <ID>FunctionNaming:SettingsActivity.kt$@Composable private fun GroupDivider()</ID>
+    <ID>FunctionNaming:SettingsActivity.kt$@Composable private fun PermissionRow( icon: ImageVector, title: String, subtitle: String, granted: Boolean, onRequest: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:SettingsActivity.kt$@Composable private fun SectionHeader(title: String)</ID>
+    <ID>FunctionNaming:SettingsActivity.kt$@Composable private fun SettingsRow( icon: ImageVector, title: String, value: String, destructive: Boolean = false, onClick: (() -&gt; Unit)? = null )</ID>
+    <ID>FunctionNaming:SettingsActivity.kt$@Composable private fun SimPickerDialog( selectedSimId: String, onSimSelected: (String) -&gt; Unit, onDismiss: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:SettingsActivity.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun SettingsScreen( viewModel: SettingsViewModel = viewModel(), onBackPressed: () -&gt; Unit, settingsRepository: SettingsRepository? = null, onRequestPermissions: (Array&lt;String&gt;) -&gt; Unit = {}, refreshTrigger: MutableIntState = mutableIntStateOf(0) )</ID>
+    <ID>FunctionNaming:Theme.kt$@Composable fun NetlessTheme( darkTheme: Boolean? = null, content: @Composable () -&gt; Unit )</ID>
+    <ID>FunctionNaming:TransactionDetailDialog.kt$@Composable fun TransactionDetailDialog( transaction: Transaction, onDismiss: () -&gt; Unit, onDelete: (() -&gt; Unit)? = null )</ID>
+    <ID>FunctionNaming:TransactionDetailDialog.kt$@Composable private fun DetailDivider()</ID>
+    <ID>FunctionNaming:TransactionDetailDialog.kt$@Composable private fun DetailRow( label: String, value: String, onCopy: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:TransactionHistoryActivity.kt$@Composable private fun StatusPill(status: String)</ID>
+    <ID>FunctionNaming:TransactionHistoryActivity.kt$@Composable private fun TransactionAvatar(initial: Char)</ID>
+    <ID>FunctionNaming:TransactionHistoryActivity.kt$@Composable private fun TransactionHistoryItem( transaction: Transaction, onClick: () -&gt; Unit )</ID>
+    <ID>FunctionNaming:TransactionHistoryActivity.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun TransactionHistoryScreen( onBackClick: () -&gt; Unit )</ID>
+    <ID>ImplicitDefaultLocale:CallOverlayService.kt$CallOverlayService.&lt;no name provided&gt;$String.format("%02ds / 40s", elapsedClamped)</ID>
+    <ID>ImportOrdering:CallOverlayService.kt$import android.app.Service import android.content.Context import android.content.Intent import android.graphics.Color import android.graphics.PixelFormat import android.os.Binder import android.os.Build import android.os.Handler import android.os.IBinder import android.os.Looper import android.text.Spannable import android.text.SpannableStringBuilder import android.text.style.ForegroundColorSpan import androidx.core.content.ContextCompat import android.os.VibrationEffect import android.os.Vibrator import android.provider.Settings import android.util.Log import android.view.Gravity import android.view.LayoutInflater import android.view.View import android.view.WindowManager import android.widget.TextView import android.widget.Toast import com.netless.app.NetlessApplication import com.netless.app.R import com.netless.app.managers.TransactionDialogManager import com.netless.app.payment.PaymentSessionManager import com.netless.app.states.PaymentState import com.netless.app.telephony.CallStateCoordinator import com.netless.app.telephony.DeviceCallState import com.netless.app.utils.OverlayLogger import com.netless.app.utils.PhoneNumberUtils import kotlinx.coroutines.CoroutineScope import kotlinx.coroutines.Dispatchers import kotlinx.coroutines.SupervisorJob import kotlinx.coroutines.cancel import kotlinx.coroutines.flow.collectLatest import kotlinx.coroutines.launch</ID>
+    <ID>ImportOrdering:ContactPickerDialog.kt$import android.content.ContentResolver import android.database.Cursor import android.provider.ContactsContract import android.util.Log import androidx.compose.foundation.background import androidx.compose.foundation.clickable import androidx.compose.foundation.layout.* import androidx.compose.foundation.lazy.LazyColumn import androidx.compose.foundation.lazy.items import androidx.compose.foundation.shape.RoundedCornerShape import androidx.compose.material.icons.Icons import androidx.compose.material.icons.filled.Close import androidx.compose.material.icons.filled.Person import androidx.compose.material.icons.filled.Search import androidx.compose.material3.* import androidx.compose.runtime.* import androidx.compose.ui.Alignment import androidx.compose.ui.Modifier import androidx.compose.ui.graphics.Color import androidx.compose.ui.platform.LocalContext import androidx.compose.ui.res.stringResource import androidx.compose.ui.text.font.FontWeight import androidx.compose.ui.text.style.TextOverflow import androidx.compose.ui.unit.dp import androidx.compose.ui.unit.sp import com.netless.app.R import com.netless.app.ui.theme.NetlessDarkGray import com.netless.app.ui.theme.NetlessLightGray import com.netless.app.ui.theme.NetlessMediumGray import com.netless.app.ui.theme.NetlessOutlineGray import com.netless.app.ui.theme.NetlessTextGray import com.netless.app.ui.theme.NetlessTextLightGray import com.netless.app.ui.theme.LocalNetlessAccentTheme import kotlinx.coroutines.Dispatchers import kotlinx.coroutines.withContext</ID>
+    <ID>ImportOrdering:MainActivity.kt$import android.Manifest import android.content.Context import android.content.Intent import android.content.pm.PackageManager import android.os.Build import android.os.Bundle import android.provider.Settings import android.util.Log import android.widget.Toast import androidx.activity.ComponentActivity import androidx.activity.compose.rememberLauncherForActivityResult import androidx.activity.compose.setContent import androidx.activity.result.contract.ActivityResultContracts import androidx.activity.viewModels import androidx.compose.animation.core.animateFloatAsState import androidx.compose.animation.core.tween import androidx.compose.foundation.background import androidx.compose.foundation.border import androidx.compose.foundation.clickable import androidx.compose.foundation.gestures.detectTapGestures import androidx.compose.foundation.interaction.MutableInteractionSource import androidx.compose.foundation.layout.Arrangement import androidx.compose.foundation.layout.Box import androidx.compose.foundation.layout.Column import androidx.compose.foundation.layout.Row import androidx.compose.foundation.layout.Spacer import androidx.compose.foundation.layout.fillMaxSize import androidx.compose.foundation.layout.fillMaxWidth import androidx.compose.foundation.layout.height import androidx.compose.foundation.layout.navigationBarsPadding import androidx.compose.foundation.layout.PaddingValues import androidx.compose.foundation.layout.offset import androidx.compose.foundation.layout.padding import androidx.compose.foundation.layout.size import androidx.compose.foundation.layout.statusBarsPadding import androidx.compose.foundation.layout.width import androidx.compose.foundation.layout.widthIn import androidx.compose.foundation.lazy.LazyColumn import androidx.compose.foundation.lazy.items import androidx.compose.foundation.rememberScrollState import androidx.compose.foundation.shape.CircleShape import androidx.compose.foundation.Canvas import androidx.compose.foundation.shape.RoundedCornerShape import androidx.compose.foundation.text.KeyboardOptions import androidx.compose.foundation.verticalScroll import androidx.compose.material.icons.Icons import androidx.compose.material.icons.filled.AccountBalance import androidx.compose.material.icons.filled.AccountBalanceWallet import androidx.compose.material.icons.filled.Add import androidx.compose.material.icons.filled.BarChart import androidx.compose.material.icons.filled.CallMade import androidx.compose.material.icons.filled.CallReceived import androidx.compose.material.icons.filled.Close import androidx.compose.material.icons.filled.FilterList import androidx.compose.material.icons.filled.History import androidx.compose.material.icons.filled.Home import androidx.compose.material.icons.filled.Lock import androidx.compose.material.icons.filled.PermContactCalendar import androidx.compose.material.icons.filled.Person import androidx.compose.material.icons.filled.QrCode import androidx.compose.material.icons.filled.QrCodeScanner import androidx.compose.material.icons.filled.Search import androidx.compose.material.icons.filled.Visibility import androidx.compose.material.icons.filled.VisibilityOff import androidx.compose.material.icons.outlined.Notifications import androidx.compose.material.icons.outlined.Settings import androidx.compose.material3.AlertDialog import androidx.compose.material3.ButtonDefaults import androidx.compose.material3.Card import androidx.compose.material3.CardDefaults import androidx.compose.material3.CircularProgressIndicator import androidx.compose.material3.DropdownMenu import androidx.compose.material3.DropdownMenuItem import androidx.compose.material3.ExperimentalMaterial3Api import androidx.compose.material3.HorizontalDivider import androidx.compose.material3.Icon import androidx.compose.material3.IconButton import androidx.compose.material3.OutlinedTextField import androidx.compose.material3.OutlinedTextFieldDefaults import androidx.compose.material3.Surface import androidx.compose.material3.Text import androidx.compose.material3.TextButton import androidx.compose.runtime.Composable import androidx.compose.runtime.CompositionLocalProvider import androidx.compose.runtime.LaunchedEffect import androidx.compose.runtime.collectAsState import androidx.compose.runtime.getValue import androidx.compose.runtime.mutableStateOf import androidx.compose.runtime.remember import androidx.compose.runtime.setValue import androidx.compose.runtime.snapshotFlow import androidx.compose.ui.Alignment import androidx.compose.ui.Modifier import androidx.compose.ui.draw.clip import androidx.compose.ui.draw.scale import androidx.compose.ui.draw.shadow import androidx.compose.ui.geometry.Offset import androidx.compose.ui.graphics.Brush import androidx.compose.ui.graphics.Color import androidx.compose.ui.graphics.Shadow import androidx.compose.ui.input.pointer.pointerInput import androidx.compose.ui.platform.LocalContext import androidx.compose.ui.platform.LocalLifecycleOwner import androidx.compose.ui.res.stringResource import androidx.compose.ui.text.TextStyle import androidx.compose.ui.text.font.FontWeight import androidx.compose.ui.text.input.KeyboardType import androidx.compose.ui.text.style.TextAlign import androidx.compose.ui.text.style.TextOverflow import androidx.compose.ui.unit.dp import androidx.compose.ui.unit.sp import androidx.core.content.ContextCompat import androidx.lifecycle.Lifecycle import androidx.lifecycle.viewmodel.compose.viewModel import com.netless.app.constants.AppConstants import com.netless.app.constants.PermissionConstants import com.netless.app.data.PaymentDetails import com.netless.app.data.PaymentStatus import com.netless.app.data.TestResultsManager import com.netless.app.helpers.MainActivityHelper import com.netless.app.helpers.SetupHelper import com.netless.app.managers.PermissionManager import com.netless.app.payment.PaymentInputValidator import com.netless.app.payment.Upi123CallStringBuilder import com.netless.app.payment.messageFor import com.netless.app.data.SettingsRepository import com.netless.app.ui.activities.SettingsActivity import com.netless.app.ui.activities.TransactionHistoryActivity import com.netless.app.ui.components.AvatarCircle import com.netless.app.ui.components.NetlessBrandWordmark import com.netless.app.ui.components.NotificationsDialog import com.netless.app.ui.components.ProfileDialog import com.netless.app.ui.components.TransactionDetailDialog import com.netless.app.ui.dialogs.ContactPickerDialog import com.netless.app.ui.theme.BlueAccentTheme import com.netless.app.ui.theme.NetlessAccentBlue import com.netless.app.ui.theme.NetlessBrandElectricGreen import com.netless.app.ui.theme.NetlessBrandEmerald import com.netless.app.ui.theme.NetlessCardBorder import com.netless.app.ui.theme.NetlessChipBackground import com.netless.app.ui.theme.NetlessDarkGray import com.netless.app.ui.theme.NetlessLightGray import com.netless.app.ui.theme.NetlessMediumGray import com.netless.app.ui.theme.NetlessOutlineGray import com.netless.app.ui.theme.NetlessStatusError import com.netless.app.ui.theme.NetlessSurfaceDim import com.netless.app.ui.theme.NetlessSurfaceElevated import com.netless.app.ui.theme.NetlessTextGray import com.netless.app.ui.theme.NetlessTextLightGray import com.netless.app.ui.theme.NetlessTextPale import com.netless.app.ui.theme.NetlessTheme import com.netless.app.ui.theme.LocalNetlessAccentTheme import com.netless.app.ui.theme.LocalNetlessDarkMode import com.netless.app.ui.theme.ZenvestActionCircleDark import com.netless.app.ui.theme.ZenvestAuroraCyan import com.netless.app.ui.theme.ZenvestAuroraLavender import com.netless.app.ui.theme.ZenvestAuroraPeach import com.netless.app.ui.theme.ZenvestAuroraRose import com.netless.app.ui.theme.ZenvestBgDark import com.netless.app.ui.theme.ZenvestBgLight import com.netless.app.ui.theme.ZenvestCardBorder import com.netless.app.ui.theme.ZenvestCardBorderDark import com.netless.app.ui.theme.ZenvestDividerDark import com.netless.app.ui.theme.ZenvestDividerLight import com.netless.app.ui.theme.ZenvestPillBgDark import com.netless.app.ui.theme.ZenvestPillBorderDark import com.netless.app.ui.theme.ZenvestSheetBgDark import com.netless.app.ui.theme.ZenvestSheetBgLight import com.netless.app.ui.theme.ZenvestSkyMid import com.netless.app.ui.theme.ZenvestSkyTop import com.netless.app.ui.theme.ZenvestTextMuted import com.netless.app.ui.theme.ZenvestTextPrimary import com.netless.app.ui.theme.ZenvestTextSecondary import com.netless.app.ui.theme.statusBackgroundColor import com.netless.app.ui.theme.statusColor import com.netless.app.utils.CurrencyFormat import com.netless.app.utils.findComponentActivity import com.netless.app.viewmodel.MainUiEvent import com.netless.app.viewmodel.MainViewModel import com.netless.app.viewmodel.TransactionViewModel import java.text.SimpleDateFormat import java.util.Date import java.util.Locale</ID>
+    <ID>ImportOrdering:PaymentProcessDialog.kt$import androidx.compose.foundation.background import androidx.compose.foundation.border import androidx.compose.foundation.layout.Arrangement import androidx.compose.foundation.layout.Box import androidx.compose.foundation.layout.Column import androidx.compose.foundation.layout.Row import androidx.compose.foundation.layout.Spacer import androidx.compose.foundation.layout.fillMaxWidth import androidx.compose.foundation.layout.height import androidx.compose.foundation.layout.padding import androidx.compose.foundation.layout.size import androidx.compose.foundation.layout.width import androidx.compose.foundation.layout.widthIn import androidx.compose.foundation.rememberScrollState import androidx.compose.foundation.shape.CircleShape import androidx.compose.foundation.shape.RoundedCornerShape import androidx.compose.foundation.verticalScroll import androidx.compose.material.icons.Icons import androidx.compose.material.icons.outlined.CheckCircle import androidx.compose.material.icons.outlined.Lock import androidx.compose.material.icons.outlined.Phone import androidx.compose.material3.Button import androidx.compose.material3.ButtonDefaults import androidx.compose.material3.Icon import androidx.compose.material3.Text import androidx.compose.material3.TextButton import androidx.compose.runtime.Composable import androidx.compose.ui.Alignment import androidx.compose.ui.Modifier import androidx.compose.ui.draw.clip import androidx.compose.ui.draw.shadow import androidx.compose.ui.graphics.Brush import androidx.compose.ui.graphics.Color import androidx.compose.ui.text.font.FontWeight import androidx.compose.ui.text.style.TextAlign import androidx.compose.ui.unit.dp import androidx.compose.ui.unit.sp import androidx.compose.ui.window.Dialog import androidx.compose.ui.window.DialogProperties import com.netless.app.ui.theme.NetlessBrandElectricGreen import com.netless.app.ui.theme.NetlessBrandEmerald import com.netless.app.ui.theme.LocalNetlessDarkMode import com.netless.app.ui.theme.ZenvestAuroraCyan import com.netless.app.ui.theme.ZenvestBgDark import com.netless.app.ui.theme.ZenvestTextMuted import com.netless.app.ui.theme.ZenvestTextPrimary import com.netless.app.ui.theme.ZenvestTextSecondary</ID>
+    <ID>ImportOrdering:QRCodeAnalyzerDecodeTest.kt$import android.graphics.Bitmap import com.netless.app.features.qr_scanner.domain.QRCodeAnalyzer import com.netless.app.features.qr_scanner.domain.QRCodeParser import com.google.zxing.BarcodeFormat import com.google.zxing.MultiFormatWriter import com.google.zxing.common.BitMatrix import org.junit.Assert.assertEquals import org.junit.Assert.assertNull import org.junit.Assert.assertTrue import org.junit.Test import org.junit.runner.RunWith import org.robolectric.RobolectricTestRunner import org.robolectric.annotation.Config</ID>
+    <ID>ImportOrdering:SettingsActivity.kt$import android.Manifest import android.content.Context import android.content.Intent import android.content.pm.PackageManager import android.os.Build import android.os.Bundle import android.provider.Settings import androidx.activity.ComponentActivity import androidx.activity.compose.setContent import androidx.activity.result.contract.ActivityResultContracts import androidx.compose.foundation.* import androidx.compose.foundation.layout.* import androidx.compose.foundation.lazy.LazyColumn import androidx.compose.foundation.lazy.items import androidx.compose.foundation.shape.CircleShape import androidx.compose.foundation.shape.RoundedCornerShape import androidx.compose.material.icons.Icons import androidx.compose.material.icons.automirrored.filled.ArrowBack import androidx.compose.material.icons.filled.* import androidx.compose.material3.* import androidx.compose.runtime.* import androidx.compose.ui.Alignment import androidx.compose.ui.Modifier import androidx.compose.ui.draw.clip import androidx.compose.ui.graphics.Color import androidx.compose.ui.graphics.vector.ImageVector import androidx.compose.ui.platform.LocalContext import androidx.compose.ui.res.stringResource import androidx.compose.ui.text.font.FontWeight import androidx.compose.ui.text.style.TextOverflow import androidx.compose.ui.unit.dp import androidx.compose.ui.unit.sp import androidx.compose.ui.window.Dialog import androidx.core.content.ContextCompat import androidx.lifecycle.viewmodel.compose.viewModel import com.netless.app.BuildConfig import com.netless.app.NetlessApplication import com.netless.app.R import com.netless.app.SetupActivity import com.netless.app.data.SettingsRepository import com.netless.app.helpers.SetupHelper import com.netless.app.repository.TransactionRepository import com.netless.app.ui.theme.BlueAccentTheme import com.netless.app.ui.theme.NetlessAccentGreenBright import com.netless.app.ui.theme.NetlessDarkGray import com.netless.app.ui.theme.NetlessDisabledGray import com.netless.app.ui.theme.NetlessLightGray import com.netless.app.ui.theme.NetlessMediumGray import com.netless.app.ui.theme.NetlessStatusError import com.netless.app.ui.theme.NetlessSurfaceDim import com.netless.app.ui.theme.NetlessTextGray import com.netless.app.ui.theme.NetlessTextLightGray import com.netless.app.ui.theme.NetlessTextPale import com.netless.app.ui.theme.NetlessTheme import com.netless.app.ui.theme.LocalNetlessAccentTheme import com.netless.app.ui.theme.LocalNetlessDarkMode import com.netless.app.ui.theme.ZenvestBgLight import com.netless.app.ui.theme.ZenvestTextMuted import com.netless.app.ui.theme.ZenvestTextPrimary import com.netless.app.ui.theme.ZenvestTextSecondary import kotlinx.coroutines.Dispatchers import kotlinx.coroutines.launch import kotlinx.coroutines.withContext</ID>
+    <ID>ImportOrdering:SetupActivity.kt$import android.Manifest import android.content.Context import android.content.Intent import android.content.pm.PackageManager import android.os.Build import android.os.Bundle import android.widget.Toast import androidx.activity.ComponentActivity import androidx.activity.compose.rememberLauncherForActivityResult import androidx.activity.compose.setContent import androidx.activity.result.contract.ActivityResultContracts import androidx.core.content.ContextCompat import androidx.compose.foundation.BorderStroke import androidx.compose.foundation.background import androidx.compose.foundation.border import androidx.compose.foundation.clickable import androidx.compose.foundation.horizontalScroll import androidx.compose.foundation.interaction.MutableInteractionSource import androidx.compose.foundation.layout.* import androidx.compose.foundation.rememberScrollState import androidx.compose.foundation.shape.CircleShape import androidx.compose.foundation.shape.RoundedCornerShape import androidx.compose.foundation.text.KeyboardOptions import androidx.compose.foundation.verticalScroll import androidx.compose.material.icons.Icons import androidx.compose.material.icons.filled.AccountBalance import androidx.compose.material.icons.filled.ArrowForward import androidx.compose.material.icons.filled.Person import androidx.compose.material.icons.filled.PhoneAndroid import androidx.compose.material.icons.filled.Search import androidx.compose.material.icons.filled.SimCard import androidx.compose.material.icons.outlined.Info import androidx.compose.material3.* import androidx.compose.runtime.* import androidx.compose.ui.Alignment import androidx.compose.ui.Modifier import androidx.compose.ui.draw.alpha import androidx.compose.ui.draw.clip import androidx.compose.ui.draw.shadow import androidx.compose.ui.graphics.Brush import androidx.compose.ui.graphics.Color import androidx.compose.ui.graphics.vector.ImageVector import androidx.compose.ui.platform.LocalContext import androidx.compose.ui.res.stringResource import androidx.compose.ui.text.TextStyle import androidx.compose.ui.text.font.FontWeight import androidx.compose.ui.text.input.KeyboardType import androidx.compose.ui.text.style.TextAlign import androidx.compose.ui.unit.dp import androidx.compose.ui.unit.sp import androidx.core.view.WindowCompat import com.netless.app.helpers.SetupHelper import com.netless.app.payment.PaymentInputValidator import com.netless.app.ui.components.AVATAR_TEMPLATES import com.netless.app.ui.components.AvatarCircle import com.netless.app.ui.components.NetlessLogo import com.netless.app.ui.components.NetlessBrandWordmark import com.netless.app.ui.theme.*</ID>
+    <ID>ImportOrdering:TransactionDetailDialog.kt$import androidx.compose.foundation.background import androidx.compose.foundation.clickable import androidx.compose.foundation.interaction.MutableInteractionSource import androidx.compose.foundation.layout.* import androidx.compose.foundation.rememberScrollState import androidx.compose.foundation.shape.RoundedCornerShape import androidx.compose.foundation.verticalScroll import androidx.compose.material.icons.Icons import androidx.compose.material.icons.filled.Close import androidx.compose.material.icons.filled.ContentCopy import androidx.compose.material3.* import androidx.compose.runtime.* import androidx.compose.ui.Alignment import androidx.compose.ui.Modifier import androidx.compose.ui.draw.clip import androidx.compose.ui.graphics.Color import androidx.compose.ui.platform.LocalClipboardManager import androidx.compose.ui.res.stringResource import androidx.compose.ui.text.AnnotatedString import androidx.compose.ui.text.font.FontFamily import androidx.compose.ui.text.font.FontWeight import androidx.compose.ui.text.style.TextAlign import androidx.compose.ui.text.style.TextOverflow import androidx.compose.ui.unit.dp import androidx.compose.ui.unit.sp import androidx.compose.ui.window.Dialog import com.netless.app.R import com.netless.app.data.Transaction import com.netless.app.ui.theme.NetlessDarkGray import com.netless.app.ui.theme.NetlessLightGray import com.netless.app.ui.theme.NetlessMediumGray import com.netless.app.ui.theme.NetlessStatusError import com.netless.app.ui.theme.NetlessSurfaceDim import com.netless.app.ui.theme.NetlessTextLightGray import com.netless.app.ui.theme.NetlessTextPale import com.netless.app.ui.theme.LocalNetlessAccentTheme import com.netless.app.ui.theme.LocalNetlessDarkMode import com.netless.app.ui.theme.ZenvestTextPrimary import com.netless.app.ui.theme.ZenvestTextSecondary import com.netless.app.ui.theme.statusColor import com.netless.app.utils.CurrencyFormat import java.text.SimpleDateFormat import java.util.Date import java.util.Locale</ID>
+    <ID>ImportOrdering:TransactionHistoryActivity.kt$import android.os.Bundle import androidx.activity.ComponentActivity import androidx.activity.compose.setContent import androidx.compose.animation.AnimatedVisibility import androidx.compose.animation.expandVertically import androidx.compose.animation.fadeIn import androidx.compose.animation.fadeOut import androidx.compose.animation.shrinkVertically import androidx.compose.foundation.background import androidx.compose.foundation.border import androidx.compose.foundation.clickable import androidx.compose.foundation.horizontalScroll import androidx.compose.foundation.interaction.MutableInteractionSource import androidx.compose.foundation.layout.* import androidx.compose.foundation.rememberScrollState import androidx.compose.foundation.lazy.LazyColumn import androidx.compose.foundation.lazy.itemsIndexed import androidx.compose.foundation.shape.CircleShape import androidx.compose.foundation.shape.RoundedCornerShape import androidx.compose.material.icons.Icons import androidx.compose.material.icons.filled.ArrowBack import androidx.compose.material.icons.filled.Close import androidx.compose.material.icons.filled.History import androidx.compose.material.icons.filled.Search import androidx.compose.material3.* import androidx.compose.runtime.* import androidx.compose.ui.Alignment import androidx.compose.ui.Modifier import androidx.compose.ui.draw.clip import androidx.compose.ui.graphics.Brush import androidx.compose.ui.graphics.Color import androidx.compose.ui.res.stringResource import androidx.compose.ui.text.font.FontWeight import androidx.compose.ui.text.style.TextOverflow import androidx.compose.ui.unit.dp import androidx.compose.ui.unit.sp import androidx.lifecycle.viewmodel.compose.viewModel import com.netless.app.R import com.netless.app.data.Transaction import com.netless.app.ui.components.TransactionDetailDialog import com.netless.app.ui.theme.BlueAccentTheme import com.netless.app.ui.theme.NetlessCardBorder import com.netless.app.ui.theme.NetlessDarkGray import com.netless.app.ui.theme.NetlessMediumGray import com.netless.app.ui.theme.NetlessStatusError import com.netless.app.ui.theme.NetlessTextLightGray import com.netless.app.ui.theme.NetlessTheme import com.netless.app.ui.theme.LocalNetlessAccentTheme import com.netless.app.ui.theme.LocalNetlessDarkMode import com.netless.app.ui.theme.ZenvestBgDark import com.netless.app.ui.theme.ZenvestBgLight import com.netless.app.ui.theme.ZenvestCardDark import com.netless.app.ui.theme.ZenvestDividerDark import com.netless.app.ui.theme.ZenvestDividerLight import com.netless.app.ui.theme.ZenvestPillBorderLight import com.netless.app.ui.theme.ZenvestSkyMid import com.netless.app.ui.theme.ZenvestSkyTop import com.netless.app.ui.theme.ZenvestSurfaceDark import com.netless.app.ui.theme.ZenvestTextMuted import com.netless.app.ui.theme.ZenvestTextPrimary import com.netless.app.ui.theme.ZenvestTextSecondary import com.netless.app.ui.theme.statusColor import com.netless.app.utils.CurrencyFormat import com.netless.app.viewmodel.TransactionViewModel import java.text.SimpleDateFormat import java.util.Calendar import java.util.Date import java.util.Locale</ID>
+    <ID>ImportOrdering:Upi123ProgressDialog.kt$import androidx.compose.animation.core.* import androidx.compose.foundation.BorderStroke import androidx.compose.foundation.background import androidx.compose.foundation.layout.* import androidx.compose.foundation.shape.CircleShape import androidx.compose.foundation.shape.RoundedCornerShape import androidx.compose.material.icons.Icons import androidx.compose.material.icons.filled.Close import androidx.compose.material3.* import androidx.compose.runtime.* import androidx.compose.ui.Alignment import androidx.compose.ui.Modifier import androidx.compose.ui.graphics.Color import androidx.compose.ui.graphics.vector.ImageVector import androidx.compose.ui.graphics.vector.path import androidx.compose.ui.res.stringResource import androidx.compose.ui.text.font.FontWeight import androidx.compose.ui.text.style.TextAlign import androidx.compose.ui.unit.dp import androidx.compose.ui.unit.sp import androidx.compose.ui.window.Dialog import androidx.compose.ui.window.DialogProperties import com.netless.app.R import com.netless.app.ui.theme.NetlessAccentGreen import com.netless.app.ui.theme.NetlessDarkGray import com.netless.app.ui.theme.NetlessLightGray import com.netless.app.ui.theme.NetlessTextGray import com.netless.app.ui.theme.NetlessTextLightGray import com.netless.app.ui.theme.ZenvestSurfaceDark import com.netless.app.ui.theme.ZenvestCardBorderDark import com.netless.app.ui.theme.ZenvestTextMuted import com.netless.app.ui.theme.ZenvestCardDark import com.netless.app.ui.theme.LocalNetlessDarkMode import com.netless.app.ui.theme.ZenvestTextPrimary import com.netless.app.ui.theme.ZenvestTextSecondary import kotlinx.coroutines.delay</ID>
+    <ID>ImportOrdering:UssdProgressDialog.kt$import androidx.compose.animation.core.* import androidx.compose.foundation.BorderStroke import androidx.compose.foundation.background import androidx.compose.foundation.layout.* import androidx.compose.foundation.shape.CircleShape import androidx.compose.foundation.shape.RoundedCornerShape import androidx.compose.material.icons.Icons import androidx.compose.material.icons.filled.Close import androidx.compose.material3.* import androidx.compose.runtime.* import androidx.compose.ui.Alignment import androidx.compose.ui.Modifier import androidx.compose.ui.graphics.Color import androidx.compose.ui.graphics.vector.ImageVector import androidx.compose.ui.graphics.vector.path import androidx.compose.ui.res.stringResource import androidx.compose.ui.text.font.FontWeight import androidx.compose.ui.text.style.TextAlign import androidx.compose.ui.unit.dp import androidx.compose.ui.unit.sp import androidx.compose.ui.window.Dialog import androidx.compose.ui.window.DialogProperties import com.netless.app.R import com.netless.app.ui.theme.NetlessDarkGray import com.netless.app.ui.theme.NetlessLightGray import com.netless.app.ui.theme.NetlessOutlineGray import com.netless.app.ui.theme.NetlessTextGray import com.netless.app.ui.theme.NetlessTextLightGray import com.netless.app.ui.theme.NetlessTextPale import com.netless.app.ui.theme.LocalNetlessAccentTheme import com.netless.app.ui.theme.ZenvestSurfaceDark import com.netless.app.ui.theme.ZenvestCardBorderDark import com.netless.app.ui.theme.ZenvestTextMuted import com.netless.app.ui.theme.ZenvestCardDark import com.netless.app.ui.theme.LocalNetlessDarkMode import com.netless.app.ui.theme.ZenvestTextPrimary import com.netless.app.ui.theme.ZenvestTextSecondary import kotlinx.coroutines.delay</ID>
+    <ID>Indentation:MainActivity.kt$ </ID>
+    <ID>LargeClass:CallOverlayService.kt$CallOverlayService : Service</ID>
+    <ID>LargeClass:QRScannerActivity.kt$QRScannerActivity : ComponentActivity</ID>
+    <ID>LongMethod:CallOverlayService.kt$CallOverlayService$private fun createSystemOverlay(phoneNumber: String, amount: String)</ID>
+    <ID>LongMethod:CallOverlayService.kt$CallOverlayService$private fun onPaymentStateChanged(state: PaymentState)</ID>
+    <ID>LongMethod:CallOverlayService.kt$CallOverlayService$private fun updateTimelineStep(step: Int)</ID>
+    <ID>LongMethod:ContactPickerDialog.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun ContactPickerDialog( onDismiss: () -&gt; Unit, onContactSelected: (Contact) -&gt; Unit )</ID>
+    <ID>LongMethod:MainActivity.kt$@Composable fun PayContactDialog( onDismiss: () -&gt; Unit, onConfirm: (String, String, String?) -&gt; Unit )</ID>
+    <ID>LongMethod:MainActivity.kt$@Composable private fun PayContactButton( onPayContactClick: () -&gt; Unit, isUpi123Ready: Boolean )</ID>
+    <ID>LongMethod:MainActivity.kt$@Composable private fun ZenvestActionButtonsRow( onSendClick: () -&gt; Unit, onScanClick: () -&gt; Unit, isDark: Boolean )</ID>
+    <ID>LongMethod:MainActivity.kt$@Composable private fun ZenvestBalanceCard( selectedBankName: String, userPhoneNumber: String = "", isDark: Boolean )</ID>
+    <ID>LongMethod:MainActivity.kt$@Composable private fun ZenvestBottomNavBar( selectedTab: Int, onSelectTab: (Int) -&gt; Unit, isDark: Boolean )</ID>
+    <ID>LongMethod:MainActivity.kt$@Composable private fun ZenvestTransactionsSheet( recentPayments: List&lt;PaymentDetails&gt;, isLoading: Boolean, error: String?, onSelectPayment: (String) -&gt; Unit, onRetry: () -&gt; Unit, onViewAllClick: () -&gt; Unit, isDark: Boolean )</ID>
+    <ID>LongMethod:MainActivity.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun MainScreen( onInitiateTransfer: (String, String) -&gt; Unit, onQRScanClick: () -&gt; Unit, onRequestOverlayPermission: () -&gt; Unit )</ID>
+    <ID>LongMethod:NotificationsDialog.kt$@Composable fun NotificationsDialog( selectedBankName: String = "Bank", userPhoneNumber: String = "", onDismiss: () -&gt; Unit )</ID>
+    <ID>LongMethod:PaymentProcessDialog.kt$@Composable fun PaymentProcessDialog( phoneNumber: String, amount: String, contactName: String? = null, bankName: String = "Punjab National Bank", onStartCall: () -&gt; Unit, onDismiss: () -&gt; Unit )</ID>
+    <ID>LongMethod:PaymentProcessDialog.kt$@Composable private fun ProcessStepItem( stepNumber: String, timeRange: String, title: String, desc: String, isDark: Boolean, isLast: Boolean = false )</ID>
+    <ID>LongMethod:PaymentResultActivity.kt$PaymentResultActivity$private fun loadTransactionData()</ID>
+    <ID>LongMethod:PaymentSessionManager.kt$PaymentSessionManager$fun onSmsConfirmed(parsed: SimpleTransaction): String?</ID>
+    <ID>LongMethod:ProfileDialog.kt$@Composable fun ProfileDialog( userName: String, avatarId: Int, userPhoneNumber: String = "", selectedBankName: String, onSaveProfile: (name: String, avatarId: Int, phoneNumber: String) -&gt; Unit, onDismiss: () -&gt; Unit )</ID>
+    <ID>LongMethod:QRScannerActivity.kt$QRScannerActivity$override fun onCreate(savedInstanceState: Bundle?)</ID>
+    <ID>LongMethod:QRScannerActivity.kt$QRScannerActivity$private fun startCamera()</ID>
+    <ID>LongMethod:SettingsActivity.kt$@Composable private fun BankPickerDialog( selectedBank: Bank, onBankSelected: (Bank) -&gt; Unit, onDismiss: () -&gt; Unit )</ID>
+    <ID>LongMethod:SettingsActivity.kt$@Composable private fun PermissionRow( icon: ImageVector, title: String, subtitle: String, granted: Boolean, onRequest: () -&gt; Unit )</ID>
+    <ID>LongMethod:SettingsActivity.kt$@Composable private fun SettingsRow( icon: ImageVector, title: String, value: String, destructive: Boolean = false, onClick: (() -&gt; Unit)? = null )</ID>
+    <ID>LongMethod:SettingsActivity.kt$@Composable private fun SimPickerDialog( selectedSimId: String, onSimSelected: (String) -&gt; Unit, onDismiss: () -&gt; Unit )</ID>
+    <ID>LongMethod:SettingsActivity.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun SettingsScreen( viewModel: SettingsViewModel = viewModel(), onBackPressed: () -&gt; Unit, settingsRepository: SettingsRepository? = null, onRequestPermissions: (Array&lt;String&gt;) -&gt; Unit = {}, refreshTrigger: MutableIntState = mutableIntStateOf(0) )</ID>
+    <ID>LongMethod:SetupActivity.kt$@Composable fun DisclaimerSection( isAccepted: Boolean, onAcceptedChange: (Boolean) -&gt; Unit, isDark: Boolean )</ID>
+    <ID>LongMethod:SetupActivity.kt$@Composable fun ProfileSection( userName: String, onNameChange: (String) -&gt; Unit, userPhoneNumber: String, onPhoneNumberChange: (String) -&gt; Unit, selectedAvatarId: Int, onSelectAvatar: (Int) -&gt; Unit, isDark: Boolean )</ID>
+    <ID>LongMethod:SetupActivity.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun BankSelectionSection( banks: List&lt;Pair&lt;String, String&gt;&gt;, selectedBank: String, onBankSelected: (String) -&gt; Unit, isDark: Boolean )</ID>
+    <ID>LongMethod:SetupActivity.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun SetupScreen(setupHelper: SetupHelper)</ID>
+    <ID>LongMethod:SetupActivity.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun SimCardSelectionSection( simCarriers: List&lt;Pair&lt;String, String&gt;&gt;, selectedPrimarySim: String, selectedSecondarySim: String, isDualSimEnabled: Boolean, onPrimarySimSelected: (String) -&gt; Unit, onSecondarySimSelected: (String) -&gt; Unit, onDualSimToggled: (Boolean) -&gt; Unit, secondarySimOptions: List&lt;Pair&lt;String, String&gt;&gt;, isDark: Boolean )</ID>
+    <ID>LongMethod:TestConfigurationActivity.kt$@Composable fun TestConfigurationScreen(testHelper: TestConfigurationHelper)</ID>
+    <ID>LongMethod:TestConfigurationActivity.kt$@Composable private fun ZenvestTestCard( title: String, code: String, description: String, isCompleted: Boolean, isTesting: Boolean, isDark: Boolean, isLocked: Boolean = false, onClick: () -&gt; Unit )</ID>
+    <ID>LongMethod:TestConfigurationHelper.kt$TestConfigurationHelper$fun initiateCall(callType: CallType)</ID>
+    <ID>LongMethod:TransactionDetailDialog.kt$@Composable fun TransactionDetailDialog( transaction: Transaction, onDismiss: () -&gt; Unit, onDelete: (() -&gt; Unit)? = null )</ID>
+    <ID>LongMethod:TransactionHistoryActivity.kt$@OptIn(ExperimentalMaterial3Api::class) @Composable fun TransactionHistoryScreen( onBackClick: () -&gt; Unit )</ID>
+    <ID>LongMethod:Upi123ProgressDialog.kt$@Composable private fun Upi123ProgressDialogContent( showConfigurationOptions: Boolean = false, onConfigured: () -&gt; Unit = {}, onNotConfigured: () -&gt; Unit = {}, onDismiss: () -&gt; Unit = {} )</ID>
+    <ID>LongMethod:UssdProgressDialog.kt$@Composable private fun UssdProgressDialogContent( progressMessage: String, showConfigurationOptions: Boolean = false, onConfigured: () -&gt; Unit = {}, onNotConfigured: () -&gt; Unit = {}, onDismiss: () -&gt; Unit = {}, onDoesNotWork: () -&gt; Unit = {} )</ID>
+    <ID>LongParameterList:MainActivity.kt$( recentPayments: List&lt;PaymentDetails&gt;, isLoading: Boolean, error: String?, onSelectPayment: (String) -&gt; Unit, onRetry: () -&gt; Unit, onViewAllClick: () -&gt; Unit, isDark: Boolean )</ID>
+    <ID>LongParameterList:PaymentProcessDialog.kt$( phoneNumber: String, amount: String, contactName: String? = null, bankName: String = "Punjab National Bank", onStartCall: () -&gt; Unit, onDismiss: () -&gt; Unit )</ID>
+    <ID>LongParameterList:PaymentProcessDialog.kt$( stepNumber: String, timeRange: String, title: String, desc: String, isDark: Boolean, isLast: Boolean = false )</ID>
+    <ID>LongParameterList:ProfileDialog.kt$( userName: String, avatarId: Int, userPhoneNumber: String = "", selectedBankName: String, onSaveProfile: (name: String, avatarId: Int, phoneNumber: String) -&gt; Unit, onDismiss: () -&gt; Unit )</ID>
+    <ID>LongParameterList:SetupActivity.kt$( simCarriers: List&lt;Pair&lt;String, String&gt;&gt;, selectedPrimarySim: String, selectedSecondarySim: String, isDualSimEnabled: Boolean, onPrimarySimSelected: (String) -&gt; Unit, onSecondarySimSelected: (String) -&gt; Unit, onDualSimToggled: (Boolean) -&gt; Unit, secondarySimOptions: List&lt;Pair&lt;String, String&gt;&gt;, isDark: Boolean )</ID>
+    <ID>LongParameterList:SetupActivity.kt$( userName: String, onNameChange: (String) -&gt; Unit, userPhoneNumber: String, onPhoneNumberChange: (String) -&gt; Unit, selectedAvatarId: Int, onSelectAvatar: (Int) -&gt; Unit, isDark: Boolean )</ID>
+    <ID>LongParameterList:TestConfigurationActivity.kt$( title: String, code: String, description: String, isCompleted: Boolean, isTesting: Boolean, isDark: Boolean, isLocked: Boolean = false, onClick: () -&gt; Unit )</ID>
+    <ID>LongParameterList:TransactionDialogManager.kt$TransactionDialogManager$( title: String, message: String, buttonText: String, iconRes: Int, iconTint: Int, iconBgColor: Int, dismissTag: String, acknowledgeSession: Boolean = true )</ID>
+    <ID>LongParameterList:UssdProgressDialog.kt$( isVisible: Boolean, progressMessage: String = stringResource(R.string.ussd_dlg_initializing), showConfigurationOptions: Boolean = false, onConfigured: () -&gt; Unit = {}, onNotConfigured: () -&gt; Unit = {}, onDismiss: () -&gt; Unit = {}, onDoesNotWork: () -&gt; Unit = {} )</ID>
+    <ID>LongParameterList:UssdProgressDialog.kt$( progressMessage: String, showConfigurationOptions: Boolean = false, onConfigured: () -&gt; Unit = {}, onNotConfigured: () -&gt; Unit = {}, onDismiss: () -&gt; Unit = {}, onDoesNotWork: () -&gt; Unit = {} )</ID>
+    <ID>LoopWithTooManyJumpStatements:SmsTransactionParser.kt$SmsTransactionParser$for</ID>
+    <ID>MagicNumber:AvatarTemplates.kt$0.24f</ID>
+    <ID>MagicNumber:AvatarTemplates.kt$0.38f</ID>
+    <ID>MagicNumber:AvatarTemplates.kt$0xFF0284C7</ID>
+    <ID>MagicNumber:AvatarTemplates.kt$0xFF047857</ID>
+    <ID>MagicNumber:AvatarTemplates.kt$0xFF059669</ID>
+    <ID>MagicNumber:AvatarTemplates.kt$0xFF0F766E</ID>
+    <ID>MagicNumber:AvatarTemplates.kt$0xFF10B981</ID>
+    <ID>MagicNumber:AvatarTemplates.kt$0xFF1E1B4B</ID>
+    <ID>MagicNumber:AvatarTemplates.kt$0xFF2563EB</ID>
+    <ID>MagicNumber:AvatarTemplates.kt$0xFF6366F1</ID>
+    <ID>MagicNumber:AvatarTemplates.kt$0xFF64748B</ID>
+    <ID>MagicNumber:AvatarTemplates.kt$0xFF7F1D1D</ID>
+    <ID>MagicNumber:AvatarTemplates.kt$0xFF991B1B</ID>
+    <ID>MagicNumber:AvatarTemplates.kt$0xFFC026D3</ID>
+    <ID>MagicNumber:AvatarTemplates.kt$0xFFDC2626</ID>
+    <ID>MagicNumber:AvatarTemplates.kt$0xFFEA580C</ID>
+    <ID>MagicNumber:AvatarTemplates.kt$0xFFEAB308</ID>
+    <ID>MagicNumber:AvatarTemplates.kt$0xFFEF4444</ID>
+    <ID>MagicNumber:AvatarTemplates.kt$0xFFF59E0B</ID>
+    <ID>MagicNumber:AvatarTemplates.kt$0xFFFBBF24</ID>
+    <ID>MagicNumber:AvatarTemplates.kt$0xFFFF5722</ID>
+    <ID>MagicNumber:AvatarTemplates.kt$0xFFFFB300</ID>
+    <ID>MagicNumber:CallOverlayService.kt$CallOverlayService$0.85f</ID>
+    <ID>MagicNumber:CallOverlayService.kt$CallOverlayService$10</ID>
+    <ID>MagicNumber:CallOverlayService.kt$CallOverlayService$1000</ID>
+    <ID>MagicNumber:CallOverlayService.kt$CallOverlayService$1000L</ID>
+    <ID>MagicNumber:CallOverlayService.kt$CallOverlayService$200</ID>
+    <ID>MagicNumber:CallOverlayService.kt$CallOverlayService$3</ID>
+    <ID>MagicNumber:CallOverlayService.kt$CallOverlayService$300</ID>
+    <ID>MagicNumber:CallOverlayService.kt$CallOverlayService$4</ID>
+    <ID>MagicNumber:CallOverlayService.kt$CallOverlayService$5</ID>
+    <ID>MagicNumber:CallOverlayService.kt$CallOverlayService$7</ID>
+    <ID>MagicNumber:CallOverlayService.kt$CallOverlayService.&lt;no name provided&gt;$1000L</ID>
+    <ID>MagicNumber:CallOverlayService.kt$CallOverlayService.&lt;no name provided&gt;$14</ID>
+    <ID>MagicNumber:CallOverlayService.kt$CallOverlayService.&lt;no name provided&gt;$15</ID>
+    <ID>MagicNumber:CallOverlayService.kt$CallOverlayService.&lt;no name provided&gt;$24</ID>
+    <ID>MagicNumber:CallOverlayService.kt$CallOverlayService.&lt;no name provided&gt;$25</ID>
+    <ID>MagicNumber:CallOverlayService.kt$CallOverlayService.&lt;no name provided&gt;$3</ID>
+    <ID>MagicNumber:CallOverlayService.kt$CallOverlayService.&lt;no name provided&gt;$39</ID>
+    <ID>MagicNumber:CallOverlayService.kt$CallOverlayService.&lt;no name provided&gt;$4</ID>
+    <ID>MagicNumber:CallOverlayService.kt$CallOverlayService.&lt;no name provided&gt;$40</ID>
+    <ID>MagicNumber:CallOverlayService.kt$CallOverlayService.&lt;no name provided&gt;$5</ID>
+    <ID>MagicNumber:CallStateCoordinatorTest.kt$CallStateCoordinatorTest$10_000L</ID>
+    <ID>MagicNumber:CallStateCoordinatorTest.kt$CallStateCoordinatorTest$1_000L</ID>
+    <ID>MagicNumber:CallStateCoordinatorTest.kt$CallStateCoordinatorTest$4_000L</ID>
+    <ID>MagicNumber:CallStateCoordinatorTest.kt$CallStateCoordinatorTest$5_000L</ID>
+    <ID>MagicNumber:CallStateCoordinatorTest.kt$CallStateCoordinatorTest$60_000L</ID>
+    <ID>MagicNumber:CallStateCoordinatorTest.kt$CallStateCoordinatorTest$64_000L</ID>
+    <ID>MagicNumber:CallStateCoordinatorTest.kt$CallStateCoordinatorTest$9_000L</ID>
+    <ID>MagicNumber:ContactPickerDialog.kt$0.8f</ID>
+    <ID>MagicNumber:ContactPickerDialog.kt$10</ID>
+    <ID>MagicNumber:DatabaseKeyManagerRecoveryTest.kt$DatabaseKeyManagerRecoveryTest.FakeWrapper$12</ID>
+    <ID>MagicNumber:NetlessBrandLogo.kt$0x3300E5FF</ID>
+    <ID>MagicNumber:NetlessBrandLogo.kt$0x99000000</ID>
+    <ID>MagicNumber:NetlessBrandLogo.kt$0xCCFFFFFF</ID>
+    <ID>MagicNumber:NetlessBrandLogo.kt$0xFF10B981</ID>
+    <ID>MagicNumber:PaymentProcessDialog.kt$0x1F059669</ID>
+    <ID>MagicNumber:PaymentProcessDialog.kt$0x20F1F5F9</ID>
+    <ID>MagicNumber:PaymentProcessDialog.kt$0x2610B981</ID>
+    <ID>MagicNumber:PaymentProcessDialog.kt$0x330284C7</ID>
+    <ID>MagicNumber:PaymentProcessDialog.kt$0x330F172A</ID>
+    <ID>MagicNumber:PaymentProcessDialog.kt$0x33475569</ID>
+    <ID>MagicNumber:PaymentProcessDialog.kt$0x40059669</ID>
+    <ID>MagicNumber:PaymentProcessDialog.kt$0x4038BDF8</ID>
+    <ID>MagicNumber:PaymentProcessDialog.kt$0x40CBD5E1</ID>
+    <ID>MagicNumber:PaymentProcessDialog.kt$0x4D1E293B</ID>
+    <ID>MagicNumber:PaymentProcessDialog.kt$0x6600E5FF</ID>
+    <ID>MagicNumber:PaymentProcessDialog.kt$0xF2FFFFFF</ID>
+    <ID>MagicNumber:PaymentProcessDialog.kt$0xFF0284C7</ID>
+    <ID>MagicNumber:PaymentProcessDialog.kt$0xFF059669</ID>
+    <ID>MagicNumber:PaymentProcessDialog.kt$0xFF0F172A</ID>
+    <ID>MagicNumber:PaymentProcessDialog.kt$0xFF172338</ID>
+    <ID>MagicNumber:PaymentProcessDialog.kt$0xFF1E293B</ID>
+    <ID>MagicNumber:PaymentProcessDialog.kt$0xFFE2E8F0</ID>
+    <ID>MagicNumber:PaymentProcessDialog.kt$0xFFF1F5F9</ID>
+    <ID>MagicNumber:PaymentProcessDialog.kt$0xFFF8FAFC</ID>
+    <ID>MagicNumber:PaymentProcessDialog.kt$0xFFFFFFFF</ID>
+    <ID>MagicNumber:PaymentResultActivity.kt$PaymentResultActivity$0.1f</ID>
+    <ID>MagicNumber:PaymentResultActivity.kt$PaymentResultActivity$0.2f</ID>
+    <ID>MagicNumber:PaymentResultActivity.kt$PaymentResultActivity$1.15f</ID>
+    <ID>MagicNumber:PaymentResultActivity.kt$PaymentResultActivity$1.1f</ID>
+    <ID>MagicNumber:PaymentResultActivity.kt$PaymentResultActivity$1.4f</ID>
+    <ID>MagicNumber:PaymentResultActivity.kt$PaymentResultActivity$1.6f</ID>
+    <ID>MagicNumber:PaymentResultActivity.kt$PaymentResultActivity$100f</ID>
+    <ID>MagicNumber:PaymentResultActivity.kt$PaymentResultActivity$1200</ID>
+    <ID>MagicNumber:PaymentResultActivity.kt$PaymentResultActivity$150</ID>
+    <ID>MagicNumber:PaymentResultActivity.kt$PaymentResultActivity$1600</ID>
+    <ID>MagicNumber:PaymentResultActivity.kt$PaymentResultActivity$200</ID>
+    <ID>MagicNumber:PaymentResultActivity.kt$PaymentResultActivity$2000</ID>
+    <ID>MagicNumber:PaymentResultActivity.kt$PaymentResultActivity$20f</ID>
+    <ID>MagicNumber:PaymentResultActivity.kt$PaymentResultActivity$3f</ID>
+    <ID>MagicNumber:PaymentResultActivity.kt$PaymentResultActivity$400</ID>
+    <ID>MagicNumber:PaymentResultActivity.kt$PaymentResultActivity$450</ID>
+    <ID>MagicNumber:PaymentResultActivity.kt$PaymentResultActivity$500</ID>
+    <ID>MagicNumber:PaymentResultActivity.kt$PaymentResultActivity$800</ID>
+    <ID>MagicNumber:PaymentSessionManagerTest.kt$PaymentSessionManagerTest$10</ID>
+    <ID>MagicNumber:PaymentSessionManagerTest.kt$PaymentSessionManagerTest$1000L</ID>
+    <ID>MagicNumber:PaymentSessionManagerTest.kt$PaymentSessionManagerTest$10_000</ID>
+    <ID>MagicNumber:PaymentSessionManagerTest.kt$PaymentSessionManagerTest$11</ID>
+    <ID>MagicNumber:PaymentSessionManagerTest.kt$PaymentSessionManagerTest$1_000</ID>
+    <ID>MagicNumber:PaymentSessionManagerTest.kt$PaymentSessionManagerTest$200</ID>
+    <ID>MagicNumber:PaymentSessionManagerTest.kt$PaymentSessionManagerTest$5</ID>
+    <ID>MagicNumber:PaymentSessionManagerTest.kt$PaymentSessionManagerTest$5_000</ID>
+    <ID>MagicNumber:PaymentSessionManagerTest.kt$PaymentSessionManagerTest$60</ID>
+    <ID>MagicNumber:PaymentState.kt$0.1f</ID>
+    <ID>MagicNumber:PaymentState.kt$0.7f</ID>
+    <ID>MagicNumber:ProfileDialog.kt$0.9f</ID>
+    <ID>MagicNumber:ProfileDialog.kt$0x1F0284C7</ID>
+    <ID>MagicNumber:ProfileDialog.kt$0x3338BDF8</ID>
+    <ID>MagicNumber:ProfileDialog.kt$0xFF0369A1</ID>
+    <ID>MagicNumber:ProfileDialog.kt$0xFF0F172A</ID>
+    <ID>MagicNumber:ProfileDialog.kt$0xFF38BDF8</ID>
+    <ID>MagicNumber:ProfileDialog.kt$0xFFF1F5F9</ID>
+    <ID>MagicNumber:ProfileDialog.kt$0xFFF8FAFC</ID>
+    <ID>MagicNumber:ProfileDialog.kt$4</ID>
+    <ID>MagicNumber:QRCodeAnalyzer.kt$QRCodeAnalyzer$2000L</ID>
+    <ID>MagicNumber:QRCodeAnalyzerDecodeTest.kt$QRCodeAnalyzerDecodeTest$200</ID>
+    <ID>MagicNumber:QRCodeParser.kt$QRCodeParser$99</ID>
+    <ID>MagicNumber:QRScannerActivity.kt$QRScannerActivity$100</ID>
+    <ID>MagicNumber:QRScannerActivity.kt$QRScannerActivity$1000</ID>
+    <ID>MagicNumber:QRScannerActivity.kt$QRScannerActivity$12</ID>
+    <ID>MagicNumber:QRScannerActivity.kt$QRScannerActivity$1500</ID>
+    <ID>MagicNumber:QRScannerActivity.kt$QRScannerActivity$17f</ID>
+    <ID>MagicNumber:QRScannerActivity.kt$QRScannerActivity$2000</ID>
+    <ID>MagicNumber:QRScannerActivity.kt$QRScannerActivity$260</ID>
+    <ID>MagicNumber:QRScannerActivity.kt$QRScannerActivity$300</ID>
+    <ID>MagicNumber:QRScannerActivity.kt$QRScannerActivity$3000</ID>
+    <ID>MagicNumber:QRScannerActivity.kt$QRScannerActivity$400</ID>
+    <ID>MagicNumber:QRScannerActivity.kt$QRScannerActivity$4000</ID>
+    <ID>MagicNumber:SettingsActivity.kt$0xFF94A3B8</ID>
+    <ID>MagicNumber:SettingsActivity.kt$0xFFCBD5E1</ID>
+    <ID>MagicNumber:SettingsActivity.kt$0xFFE2E8F0</ID>
+    <ID>MagicNumber:SettingsActivity.kt$0xFFF1F5F9</ID>
+    <ID>MagicNumber:SettingsRepository.kt$SettingsRepository$30</ID>
+    <ID>MagicNumber:SetupHelper.kt$SetupHelper.Companion$5</ID>
+    <ID>MagicNumber:SimpleSMSReceiver.kt$SimpleSMSReceiver$8_000</ID>
+    <ID>MagicNumber:SmsParsingRegexTest.kt$SmsParsingRegexTest$150</ID>
+    <ID>MagicNumber:SmsTransactionParser.kt$SmsTransactionParser$1000</ID>
+    <ID>MagicNumber:SmsTransactionParser.kt$SmsTransactionParser$120</ID>
+    <ID>MagicNumber:SmsTransactionParser.kt$SmsTransactionParser$50</ID>
+    <ID>MagicNumber:SmsTransactionParser.kt$SmsTransactionParser$9999</ID>
+    <ID>MagicNumber:SmsTransactionParserTest.kt$SmsTransactionParserTest$140</ID>
+    <ID>MagicNumber:SmsTransactionParserTest.kt$SmsTransactionParserTest$1_700_000_000_000L</ID>
+    <ID>MagicNumber:SmsTransactionParserTest.kt$SmsTransactionParserTest$4321</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$10.38f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$10.61f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$10.79f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$10f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$12f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$13.21f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$13.39f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$13.62f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$14.82f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$14.91f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$14.94f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$15.18f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$15.31f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$15.41f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$15.51f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$15.68f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$15.93f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$15.96f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$16.08f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$16.43f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$16.51f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$16f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$17.38f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$17.55f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$18.76f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$18f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$19.11f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$2.01f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$2.89f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$20.55f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$20f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$21.11f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$21f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$22f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$3.45f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$3f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$4.89f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$4f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$5.25f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$6.45f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$6.62f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$6f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$7.57f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$7.5f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$7.92f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$8.05f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$8.06f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$8.31f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$8.59f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$8.5f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$8.7f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$8.82f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$8f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$9.07f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$9.18f</ID>
+    <ID>MagicNumber:TestConfigurationActivity.kt$9.1f</ID>
+    <ID>MagicNumber:TestConfigurationHelper.kt$TestConfigurationHelper$2000</ID>
+    <ID>MagicNumber:TestConfigurationHelper.kt$TestConfigurationHelper$25000</ID>
+    <ID>MagicNumber:TransactionDetailDialog.kt$0xFFCBD5E1</ID>
+    <ID>MagicNumber:TransactionDetailDialog.kt$0xFFE2E8F0</ID>
+    <ID>MagicNumber:TransactionDetailDialog.kt$0xFFF1F5F9</ID>
+    <ID>MagicNumber:TransactionDetailDialog.kt$0xFFF8FAFC</ID>
+    <ID>MagicNumber:TransactionDetector.kt$TransactionDetector$1000</ID>
+    <ID>MagicNumber:TransactionDetector.kt$TransactionDetector.&lt;no name provided&gt;$0.75f</ID>
+    <ID>MagicNumber:TransactionDetector.kt$TransactionDetector.&lt;no name provided&gt;$16</ID>
+    <ID>MagicNumber:TransactionDetector.kt$TransactionDetector.&lt;no name provided&gt;$64</ID>
+    <ID>MagicNumber:TransactionDetectorTest.kt$TransactionDetectorTest$1000L</ID>
+    <ID>MagicNumber:TransactionDetectorTest.kt$TransactionDetectorTest$6</ID>
+    <ID>MagicNumber:TransactionDetectorTest.kt$TransactionDetectorTest$60</ID>
+    <ID>MagicNumber:TransactionHistoryActivity.kt$0x1F0F172A</ID>
+    <ID>MagicNumber:TransactionHistoryActivity.kt$0x330F172A</ID>
+    <ID>MagicNumber:TransactionHistoryActivity.kt$0x33FFFFFF</ID>
+    <ID>MagicNumber:TransactionHistoryActivity.kt$0x66FFFFFF</ID>
+    <ID>MagicNumber:TransactionHistoryActivity.kt$0xFFE2E8F0</ID>
+    <ID>MagicNumber:TransactionHistoryActivity.kt$1000L</ID>
+    <ID>MagicNumber:TransactionHistoryActivity.kt$24</ID>
+    <ID>MagicNumber:TransactionHistoryActivity.kt$60</ID>
+    <ID>MagicNumber:TransactionHistoryActivity.kt$7</ID>
+    <ID>MagicNumber:TransactionViewModel.kt$TransactionViewModel$10</ID>
+    <ID>MagicNumber:Upi123ProgressDialog.kt$10f</ID>
+    <ID>MagicNumber:Upi123ProgressDialog.kt$12f</ID>
+    <ID>MagicNumber:Upi123ProgressDialog.kt$14f</ID>
+    <ID>MagicNumber:Upi123ProgressDialog.kt$15.1f</ID>
+    <ID>MagicNumber:Upi123ProgressDialog.kt$16.2f</ID>
+    <ID>MagicNumber:Upi123ProgressDialog.kt$16f</ID>
+    <ID>MagicNumber:Upi123ProgressDialog.kt$17.1f</ID>
+    <ID>MagicNumber:Upi123ProgressDialog.kt$18.2f</ID>
+    <ID>MagicNumber:Upi123ProgressDialog.kt$18f</ID>
+    <ID>MagicNumber:Upi123ProgressDialog.kt$20f</ID>
+    <ID>MagicNumber:Upi123ProgressDialog.kt$6f</ID>
+    <ID>MagicNumber:Upi123ProgressDialog.kt$7.8f</ID>
+    <ID>MagicNumber:Upi123ProgressDialog.kt$8.9f</ID>
+    <ID>MagicNumber:Upi123ProgressDialog.kt$8f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$1.99522f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$10.2412f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$10.81f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$11.19f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$11.3868f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$12.85f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$13.2072f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$13.62f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$13.787f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$15.0264f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$15.0555f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$15.1052f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$15.184f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$15.19f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$15.2662f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$15.2809f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$15.32f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$15.3685f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$15.4843f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$15.64f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$15.6829f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$15.7143f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$15.88f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$15.9578f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$16.1032f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$16.2001f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$16.5481f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$16.5669f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$16.7428f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$16.91f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$16.92f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$16.9338f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$16.993f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$17.3147f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$17.4044f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$17.4504f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$17.88f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$17.9f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$18.8073f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$18.85f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$19.7499f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$19.82f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$19.92f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$2.00026f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$2.05729f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$2.095f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$2.12787f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$2.12f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$2.16708f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$2.17f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$2.21649f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$2.28271f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$2.30512f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$2.44655f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$2.44766f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$2.44824f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$2.48353f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$2.63476f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$2.65162f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$2.79999f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$2.82185f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$2.85669f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$20.0974f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$20.1985f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$20.3769f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$20.4742f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$20.5341f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$20.6407f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$20.71f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$20.7293f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$20.9046f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$20.9844f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$21.1468f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$21.1906f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$21.2136f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$21.3521f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$21.4019f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$21.5573f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$21.5856f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$21.5901f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$21.6301f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$21.7209f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$21.7335f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$21.8227f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$21.8325f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$21.9119f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$21.92f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$21.9441f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$21.9451f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$21.9465f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$22.0011f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$22.263f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$22.4348f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$22.43f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$22f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$3.04924f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$3.09849f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$3.23945f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$3.302f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$3.36162f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$3.49996f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$3.55476f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$3.62476f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$3.72f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$3.82777f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$3.90347f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$4.18f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$4.1f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$4.68007f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$5.19f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$5.62273f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$6.55f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$6.72533f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$6.97953f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$7.1f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$7.271f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$7.43697f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$7.59565f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$7.88189f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$8.06622f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$8.09f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$8.32681f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$8.43306f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$8.74707f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$8.77382f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$8.7999f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$9.04224f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$9.11f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$9.12f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$9.28573f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$9.36f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$9.51315f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$9.51567f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$9.63151f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$9.81598f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$9.81f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$9.89482f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$9.94454f</ID>
+    <ID>MagicNumber:UssdProgressDialog.kt$9.97366f</ID>
+    <ID>MatchingDeclarationName:AccentTheme.kt$NetlessAccentTheme</ID>
+    <ID>MatchingDeclarationName:AvatarTemplates.kt$AvatarTemplate</ID>
+    <ID>MatchingDeclarationName:ContactPickerDialog.kt$Contact</ID>
+    <ID>MatchingDeclarationName:NotificationsDialog.kt$NotificationItem</ID>
+    <ID>MaxLineLength:CallOverlayService.kt$CallOverlayService$dialogManager</ID>
+    <ID>MaxLineLength:CallOverlayService.kt$CallOverlayService$val activeColor = if (isDarkMode) ContextCompat.getColor(this, R.color.overlay_text_primary) else Color.parseColor("#0F172A")</ID>
+    <ID>MaxLineLength:CallOverlayService.kt$CallOverlayService$val cyanColor = if (isDarkMode) ContextCompat.getColor(this, R.color.overlay_cyan) else Color.parseColor("#0284C7")</ID>
+    <ID>MaxLineLength:CallOverlayService.kt$CallOverlayService$val inactiveColor = if (isDarkMode) ContextCompat.getColor(this, R.color.overlay_step_inactive) else Color.parseColor("#94A3B8")</ID>
+    <ID>MaxLineLength:CallOverlayService.kt$CallOverlayService$val secondaryColor = if (isDarkMode) ContextCompat.getColor(this, R.color.overlay_text_secondary) else Color.parseColor("#64748B")</ID>
+    <ID>MaxLineLength:MainActivity.kt$Text(stringResource(R.string.home_field_amount_hint), color = if (isDark) NetlessTextGray else ZenvestTextMuted)</ID>
+    <ID>MaxLineLength:MainActivity.kt$Text(stringResource(R.string.home_field_amount_label), color = if (isDark) NetlessTextLightGray else ZenvestTextSecondary)</ID>
+    <ID>MaxLineLength:MainActivity.kt$Text(stringResource(R.string.home_field_mobile_hint), color = if (isDark) NetlessTextGray else ZenvestTextMuted)</ID>
+    <ID>MaxLineLength:MainActivity.kt$Text(stringResource(R.string.home_field_mobile_label), color = if (isDark) NetlessTextLightGray else ZenvestTextSecondary)</ID>
+    <ID>MaxLineLength:MainActivity.kt$focusedBorderColor = if (isOverCap) NetlessStatusError else if (isDark) NetlessOutlineGray else Color(0xFF94A3B8)</ID>
+    <ID>MaxLineLength:MainActivity.kt$fontWeight = if (selectedDateSort == key) FontWeight.Bold else FontWeight.Normal</ID>
+    <ID>MaxLineLength:MainActivity.kt$text = if (searchQuery.isNotEmpty() || selectedDateSort != "NEWEST") "No matching transactions" else stringResource(R.string.home_no_transactions)</ID>
+    <ID>MaxLineLength:MainActivity.kt$text = if (searchQuery.isNotEmpty() || selectedDateSort != "NEWEST") "Try resetting filters" else stringResource(R.string.home_no_transactions_sub)</ID>
+    <ID>MaxLineLength:MainActivity.kt$unfocusedBorderColor = if (isOverCap) NetlessStatusError else if (isDark) NetlessLightGray else Color(0xFFCBD5E1)</ID>
+    <ID>MaxLineLength:NotificationsDialog.kt$description = "NPCI 123PAY voice service and secure offline payment pipeline are linked to $selectedBankName (•••• $last4)."</ID>
+    <ID>MaxLineLength:PaymentProcessDialog.kt$text = "100% Offline. Your UPI PIN is entered directly on the live call, never seen by the app."</ID>
+    <ID>MaxLineLength:ProfileDialog.kt$val finalName = if (editingName.isNotBlank()) editingName.trim() else if (oldName.isNotBlank()) oldName else "User"</ID>
+    <ID>MaxLineLength:QRScannerActivity.kt$QRScannerActivity$Log.d("QRScanner", "Activity destroying with USSD dialed - keeping payment session and SMS detector active!")</ID>
+    <ID>MaxLineLength:QRScannerActivity.kt$QRScannerActivity$findViewById&lt;View&gt;(android.R.id.content).setBackgroundColor(ContextCompat.getColor(this, android.R.color.black))</ID>
+    <ID>MaxLineLength:QRScannerActivity.kt$QRScannerActivity$findViewById&lt;View&gt;(android.R.id.content).setBackgroundColor(android.graphics.Color.parseColor("#F8FAFC"))</ID>
+    <ID>MaxLineLength:SettingsActivity.kt$SettingsViewModel$"camera" to (ContextCompat.checkSelfPermission(context, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED)</ID>
+    <ID>MaxLineLength:SettingsActivity.kt$SettingsViewModel$"contacts" to (ContextCompat.checkSelfPermission(context, Manifest.permission.READ_CONTACTS) == PackageManager.PERMISSION_GRANTED)</ID>
+    <ID>MaxLineLength:SettingsActivity.kt$SettingsViewModel$"overlay" to (if (Build.VERSION.SDK_INT &gt;= Build.VERSION_CODES.M) Settings.canDrawOverlays(context) else true)</ID>
+    <ID>MaxLineLength:SettingsActivity.kt$SettingsViewModel$"sms" to (ContextCompat.checkSelfPermission(context, Manifest.permission.RECEIVE_SMS) == PackageManager.PERMISSION_GRANTED)</ID>
+    <ID>MaxLineLength:SettingsActivity.kt$SettingsViewModel$ContextCompat.checkSelfPermission(context, Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED</ID>
+    <ID>MaxLineLength:SettingsActivity.kt$SettingsViewModel$ContextCompat.checkSelfPermission(context, Manifest.permission.READ_PHONE_STATE) == PackageManager.PERMISSION_GRANTED</ID>
+    <ID>MaxLineLength:SetupActivity.kt$color = if (isDualSimEnabled) accentColor else if (isDark) Color(0x44FFFFFF) else Color(0x33000000)</ID>
+    <ID>MaxLineLength:SetupHelper.kt$SetupHelper.Companion$if (subCombined.contains("vodafone") || subCombined.contains("idea") || subCombined.contains("vi")) return "vodafone"</ID>
+    <ID>MaxLineLength:SetupHelper.kt$SetupHelper.Companion$val subManager = context.getSystemService(Context.TELEPHONY_SUBSCRIPTION_SERVICE) as? android.telephony.SubscriptionManager</ID>
+    <ID>MaxLineLength:SetupHelper.kt$SetupHelper.Companion$val telephonyManager = context.getSystemService(Context.TELEPHONY_SERVICE) as? android.telephony.TelephonyManager</ID>
+    <ID>MaxLineLength:SmsParsingRegexTest.kt$SmsParsingRegexTest$"on 20-MAY-26. Avl bal Rs 12,345.67. Call 18002586161 to report fraud. Never share your UPI PIN with anyone."</ID>
+    <ID>MaxLineLength:TestConfigurationActivity.kt$AirtelGuideStep(step = "1", text = "Dial *99# on your Airtel phone keypad.", isDark = isDark)</ID>
+    <ID>MaxLineLength:TestConfigurationActivity.kt$AirtelGuideStep(step = "2", text = "Reply with '1' to select 'Send Money'.", isDark = isDark)</ID>
+    <ID>MaxLineLength:TestConfigurationActivity.kt$AirtelGuideStep(step = "3", text = "Choose 'Mobile No' or 'UPI ID' and enter payee details.", isDark = isDark)</ID>
+    <ID>MaxLineLength:TestConfigurationActivity.kt$AirtelGuideStep(step = "4", text = "Enter amount and type your secret UPI PIN directly on the screen.", isDark = isDark)</ID>
+    <ID>MaxLineLength:TestConfigurationActivity.kt$description = "Automated offline IVR transfer rail. Dials &amp; routes recipient and amount automatically."</ID>
+    <ID>MaxLineLength:TestConfigurationActivity.kt$description = "Jio operates 100% on VoLTE and does not support GSM *99# USSD. 123PAY calling service is your active rail."</ID>
+    <ID>MaxLineLength:TestConfigurationActivity.kt$imageVector = if (showAirtelGuide) Icons.Default.KeyboardArrowUp else Icons.Default.KeyboardArrowDown</ID>
+    <ID>MaxLineLength:TestConfigurationActivity.kt$text = "Jio operates 100% over VoLTE and does not support GSM *99# USSD. Your offline payments route exclusively and smoothly via the automated 123PAY Calling Service (08045163666)."</ID>
+    <ID>MaxLineLength:TestConfigurationActivity.kt$text = "This will initiate a real test connection to your carrier's NPCI 123PAY rail to verify network readiness on your SIM."</ID>
+    <ID>MaxLineLength:TestConfigurationActivity.kt$text = "Your SIM supports both hands-free 123PAY automated call transfers and carrier *99# USSD banking menus."</ID>
+    <ID>MaxLineLength:TestConfigurationHelper.kt$TestConfigurationHelper$Log.d(TAG, "Configuration dialog shown after 25 seconds - showUssdDialog: $showUssdDialog, showUssdConfigurationOptions: $showUssdConfigurationOptions")</ID>
+    <ID>MaxLineLength:TestConfigurationHelper.kt$TestConfigurationHelper$Log.d(TAG, "USSD timeout reached but conditions not met - ussdTesting: $ussdTesting, ussdTestCompleted: $ussdTestCompleted")</ID>
+    <ID>MaxLineLength:TransactionHistoryActivity.kt$color = if (isSelected) Color.White else if (isDark) NetlessTextLightGray else ZenvestTextSecondary</ID>
+    <ID>MaximumLineLength:CallOverlayService.kt$CallOverlayService$ </ID>
+    <ID>MaximumLineLength:MainActivity.kt$ </ID>
+    <ID>MaximumLineLength:NotificationsDialog.kt$ </ID>
+    <ID>MaximumLineLength:PaymentProcessDialog.kt$ </ID>
+    <ID>MaximumLineLength:ProfileDialog.kt$ </ID>
+    <ID>MaximumLineLength:QRScannerActivity.kt$QRScannerActivity$ </ID>
+    <ID>MaximumLineLength:SettingsActivity.kt$SettingsViewModel$ </ID>
+    <ID>MaximumLineLength:SetupActivity.kt$ </ID>
+    <ID>MaximumLineLength:SetupHelper.kt$SetupHelper.Companion$ </ID>
+    <ID>MaximumLineLength:SmsParsingRegexTest.kt$SmsParsingRegexTest$ </ID>
+    <ID>MaximumLineLength:TestConfigurationActivity.kt$ </ID>
+    <ID>MaximumLineLength:TestConfigurationHelper.kt$TestConfigurationHelper$ </ID>
+    <ID>MaximumLineLength:TransactionHistoryActivity.kt$ </ID>
+    <ID>ModifierListSpacing:AppDatabase.kt$data</ID>
+    <ID>ModifierListSpacing:DatabaseEncryptionMigrator.kt$data</ID>
+    <ID>ModifierListSpacing:DatabaseKeyManager.kt$data</ID>
+    <ID>ModifierListSpacing:DatabaseKeyManagerRecoveryTest.kt$data</ID>
+    <ID>ModifierListSpacing:TestResults.kt$data</ID>
+    <ID>ModifierListSpacing:Transaction.kt$data</ID>
+    <ID>ModifierListSpacing:TransactionDao.kt$data</ID>
+    <ID>ModifierListSpacing:TransactionMappingTest.kt$data</ID>
+    <ID>ModifierListSpacing:UPIData.kt$data</ID>
+    <ID>ModifierOrder:PaymentStatus.kt$PaymentStatus$data /** * Lifecycle status attached to a payment record, mirroring the canonical * [TransactionStatus] strings. UNVERIFIED and NEEDS_REVIEW are distinct from * PENDING on purpose — collapsing them would hide the two outcomes the user * most needs to see. */ enum</ID>
+    <ID>ModifierOrdering:PaymentStatus.kt$PaymentStatus$data /** * Lifecycle status attached to a payment record, mirroring the canonical * [TransactionStatus] strings. UNVERIFIED and NEEDS_REVIEW are distinct from * PENDING on purpose — collapsing them would hide the two outcomes the user * most needs to see. */ enum</ID>
+    <ID>MultiLineIfElse:MainActivity.kt$Color.Transparent</ID>
+    <ID>MultiLineIfElse:MainActivity.kt$NetlessMediumGray</ID>
+    <ID>MultiLineIfElse:MainActivity.kt$accent.primary.copy(alpha = 0.18f)</ID>
+    <ID>MultiLineIfElse:SettingsActivity.kt$accent.primary.copy(alpha = 0.15f)</ID>
+    <ID>MultiLineIfElse:SetupActivity.kt$Color.Transparent</ID>
+    <ID>MultiLineIfElse:SetupActivity.kt$banks</ID>
+    <ID>MultiLineIfElse:SetupActivity.kt$banks.filter { it.second.contains(searchQuery, ignoreCase = true) || it.first.contains(searchQuery, ignoreCase = true) }</ID>
+    <ID>NestedBlockDepth:SetupHelper.kt$SetupHelper.Companion$fun detectPrimaryCarrier(context: Context): String</ID>
+    <ID>NoConsecutiveBlankLines:MainActivity.kt$ </ID>
+    <ID>NoConsecutiveBlankLines:TransactionDialogManager.kt$ </ID>
+    <ID>NoUnusedImports:AvatarTemplates.kt$.AvatarTemplates.kt</ID>
+    <ID>NoUnusedImports:MainActivity.kt$com.netless.app.MainActivity.kt</ID>
+    <ID>NoUnusedImports:NotificationsDialog.kt$com.netless.app.ui.components.NotificationsDialog.kt</ID>
+    <ID>NoUnusedImports:PaymentProcessDialog.kt$.PaymentProcessDialog.kt</ID>
+    <ID>NoUnusedImports:PaymentResultActivity.kt$com.netless.app.ui.activities.PaymentResultActivity.kt</ID>
+    <ID>NoUnusedImports:ProfileDialog.kt$.ProfileDialog.kt</ID>
+    <ID>NoUnusedImports:SetupActivity.kt$com.netless.app.SetupActivity.kt</ID>
+    <ID>NoUnusedImports:TestConfigurationActivity.kt$com.netless.app.TestConfigurationActivity.kt</ID>
+    <ID>NoUnusedImports:Upi123ProgressDialog.kt$com.netless.app.ui.dialogs.Upi123ProgressDialog.kt</ID>
+    <ID>NoUnusedImports:UssdProgressDialog.kt$com.netless.app.ui.dialogs.UssdProgressDialog.kt</ID>
+    <ID>NoWildcardImports:ContactPickerDialog.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>NoWildcardImports:ContactPickerDialog.kt$import androidx.compose.material3.*</ID>
+    <ID>NoWildcardImports:ContactPickerDialog.kt$import androidx.compose.runtime.*</ID>
+    <ID>NoWildcardImports:NotificationsDialog.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>NoWildcardImports:NotificationsDialog.kt$import androidx.compose.material3.*</ID>
+    <ID>NoWildcardImports:NotificationsDialog.kt$import androidx.compose.runtime.*</ID>
+    <ID>NoWildcardImports:NotificationsDialog.kt$import com.netless.app.ui.theme.*</ID>
+    <ID>NoWildcardImports:ProfileDialog.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>NoWildcardImports:ProfileDialog.kt$import androidx.compose.material3.*</ID>
+    <ID>NoWildcardImports:ProfileDialog.kt$import androidx.compose.runtime.*</ID>
+    <ID>NoWildcardImports:ProfileDialog.kt$import com.netless.app.ui.theme.*</ID>
+    <ID>NoWildcardImports:SettingsActivity.kt$import androidx.compose.foundation.*</ID>
+    <ID>NoWildcardImports:SettingsActivity.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>NoWildcardImports:SettingsActivity.kt$import androidx.compose.material.icons.filled.*</ID>
+    <ID>NoWildcardImports:SettingsActivity.kt$import androidx.compose.material3.*</ID>
+    <ID>NoWildcardImports:SettingsActivity.kt$import androidx.compose.runtime.*</ID>
+    <ID>NoWildcardImports:SetupActivity.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>NoWildcardImports:SetupActivity.kt$import androidx.compose.material3.*</ID>
+    <ID>NoWildcardImports:SetupActivity.kt$import androidx.compose.runtime.*</ID>
+    <ID>NoWildcardImports:SetupActivity.kt$import com.netless.app.ui.theme.*</ID>
+    <ID>NoWildcardImports:TestConfigurationActivity.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>NoWildcardImports:TestConfigurationActivity.kt$import androidx.compose.material3.*</ID>
+    <ID>NoWildcardImports:TestConfigurationActivity.kt$import androidx.compose.runtime.*</ID>
+    <ID>NoWildcardImports:TestConfigurationActivity.kt$import com.netless.app.ui.theme.*</ID>
+    <ID>NoWildcardImports:TransactionDetailDialog.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>NoWildcardImports:TransactionDetailDialog.kt$import androidx.compose.material3.*</ID>
+    <ID>NoWildcardImports:TransactionDetailDialog.kt$import androidx.compose.runtime.*</ID>
+    <ID>NoWildcardImports:TransactionHistoryActivity.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>NoWildcardImports:TransactionHistoryActivity.kt$import androidx.compose.material3.*</ID>
+    <ID>NoWildcardImports:TransactionHistoryActivity.kt$import androidx.compose.runtime.*</ID>
+    <ID>NoWildcardImports:Upi123ProgressDialog.kt$import androidx.compose.animation.core.*</ID>
+    <ID>NoWildcardImports:Upi123ProgressDialog.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>NoWildcardImports:Upi123ProgressDialog.kt$import androidx.compose.material3.*</ID>
+    <ID>NoWildcardImports:Upi123ProgressDialog.kt$import androidx.compose.runtime.*</ID>
+    <ID>NoWildcardImports:UssdProgressDialog.kt$import androidx.compose.animation.core.*</ID>
+    <ID>NoWildcardImports:UssdProgressDialog.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>NoWildcardImports:UssdProgressDialog.kt$import androidx.compose.material3.*</ID>
+    <ID>NoWildcardImports:UssdProgressDialog.kt$import androidx.compose.runtime.*</ID>
+    <ID>PackageName:QRScannerActivity.kt$package com.netless.app.features.qr_scanner.presentation</ID>
+    <ID>PackageNaming:QRScannerActivity.kt$package com.netless.app.features.qr_scanner.presentation</ID>
+    <ID>ReturnCount:CallManager.kt$CallManager$fun terminateCall(): Boolean</ID>
+    <ID>ReturnCount:ContextExt.kt$fun Context.findComponentActivity(): ComponentActivity?</ID>
+    <ID>ReturnCount:MainActivityHelper.kt$MainActivityHelper$fun initiateTransfer(phoneNumber: String, amount: String)</ID>
+    <ID>ReturnCount:MainActivityHelper.kt$MainActivityHelper$private fun warnIfVoiceSimMismatch()</ID>
+    <ID>ReturnCount:PaymentSessionManager.kt$PaymentSessionManager$fun onSmsConfirmed(parsed: SimpleTransaction): String?</ID>
+    <ID>ReturnCount:PaymentSessionManagerTest.kt$PaymentSessionManagerTest.FakeStore$override suspend fun transitionStatus( transactionId: String, expectedStatus: String, newStatus: String ): Int</ID>
+    <ID>ReturnCount:PhoneNumberUtils.kt$PhoneNumberUtils$fun formatPhoneForDisplay(phoneNumber: String?, lastDigits: Int = 4): String</ID>
+    <ID>ReturnCount:QRCodeParser.kt$QRCodeParser$private fun parseUpiUri(raw: String): ParseResult</ID>
+    <ID>ReturnCount:SetupHelper.kt$SetupHelper$fun validateForm(setupData: SetupData): ValidationResult</ID>
+    <ID>ReturnCount:SetupHelper.kt$SetupHelper.Companion$fun detectPrimaryCarrier(context: Context): String</ID>
+    <ID>ReturnCount:SetupHelper.kt$SetupHelper.Companion$fun getBankDisplayName(bankIdOrName: String): String</ID>
+    <ID>ReturnCount:SimpleSMSReceiver.kt$SimpleSMSReceiver$override fun onReceive(context: Context?, intent: Intent?)</ID>
+    <ID>ReturnCount:SmsTransactionParser.kt$SmsTransactionParser$fun parse( sender: String, body: String, expectedAmount: String?, clock: () -&gt; Long = System::currentTimeMillis, randomSuffix: () -&gt; Int = { (1000..9999).random() } ): SimpleTransaction?</ID>
+    <ID>ReturnCount:SmsTransactionParser.kt$SmsTransactionParser$internal fun detectBank(sender: String, body: String): String?</ID>
+    <ID>ReturnCount:SmsTransactionParser.kt$SmsTransactionParser$internal fun isAmountMatching(extracted: String, expected: String): Boolean</ID>
+    <ID>ReturnCount:SmsTransactionParser.kt$SmsTransactionParser$internal fun isTransactionMessage(body: String): Boolean</ID>
+    <ID>ReturnCount:TestConfigurationHelper.kt$TestConfigurationHelper$fun initiateCall(callType: CallType)</ID>
+    <ID>ReturnCount:TransactionDetector.kt$TransactionDetector$@Synchronized fun processSMS(sender: String, body: String): SimpleTransaction?</ID>
+    <ID>ReturnCount:TransactionDetector.kt$TransactionDetector$fun shouldProcessSMS(): Boolean</ID>
+    <ID>ReturnCount:Upi123CallStringBuilder.kt$Upi123CallStringBuilder$fun build(serviceNumber: String, phoneNumber: String, amount: String): Result</ID>
+    <ID>SwallowedException:CallOverlayService.kt$CallOverlayService$e: Exception</ID>
+    <ID>SwallowedException:CallStateCoordinator.kt$CallStateCoordinator$e: SecurityException</ID>
+    <ID>SwallowedException:QRCodeParser.kt$QRCodeParser$e: Exception</ID>
+    <ID>SwallowedException:QRCodeParser.kt$QRCodeParser$e: UnsupportedOperationException</ID>
+    <ID>SwallowedException:TestResults.kt$TestResultsManager$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:CallManager.kt$CallManager$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:CallOverlayService.kt$CallOverlayService$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:CallOverlayService.kt$CallOverlayService.Companion$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:CallStateCoordinator.kt$CallStateCoordinator$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:ContactPickerDialog.kt$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:DatabaseEncryptionMigrator.kt$DatabaseEncryptionMigrator$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:MainActivityHelper.kt$MainActivityHelper$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:QRCodeParser.kt$QRCodeParser$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:QRScannerActivity.kt$QRScannerActivity$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:QRScannerActivity.kt$QRScannerActivity$exc: Exception</ID>
+    <ID>TooGenericExceptionCaught:SetupHelper.kt$SetupHelper.Companion$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:SimpleSMSReceiver.kt$SimpleSMSReceiver$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:TestResults.kt$TestResultsManager$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:TransactionDialogManager.kt$TransactionDialogManager$e: Exception</ID>
+    <ID>TooGenericExceptionCaught:TransactionViewModel.kt$TransactionViewModel$e: Exception</ID>
+    <ID>TooManyFunctions:CallManager.kt$CallManager</ID>
+    <ID>TooManyFunctions:CallOverlayService.kt$CallOverlayService : Service</ID>
+    <ID>TooManyFunctions:MainActivity.kt$com.netless.app.MainActivity.kt</ID>
+    <ID>TooManyFunctions:MainActivityHelper.kt$MainActivityHelper</ID>
+    <ID>TooManyFunctions:OverlayLogger.kt$OverlayLogger</ID>
+    <ID>TooManyFunctions:PaymentResultActivity.kt$PaymentResultActivity : AppCompatActivity</ID>
+    <ID>TooManyFunctions:PaymentSessionManager.kt$PaymentSessionManager</ID>
+    <ID>TooManyFunctions:PermissionManager.kt$PermissionManager</ID>
+    <ID>TooManyFunctions:QRScannerActivity.kt$QRScannerActivity : ComponentActivity</ID>
+    <ID>TooManyFunctions:SetupHelper.kt$SetupHelper</ID>
+    <ID>TooManyFunctions:SmsTransactionParser.kt$SmsTransactionParser</ID>
+    <ID>TooManyFunctions:TestConfigurationHelper.kt$TestConfigurationHelper</ID>
+    <ID>TooManyFunctions:TestConfigurationHelper.kt$TestConfigurationHelper$UICallback</ID>
+    <ID>TooManyFunctions:TransactionDao.kt$TransactionDao</ID>
+    <ID>TooManyFunctions:TransactionRepository.kt$TransactionRepository : PaymentTransactionStore</ID>
+    <ID>TooManyFunctions:TransactionViewModel.kt$TransactionViewModel : AndroidViewModel</ID>
+    <ID>UnusedParameter:CallManager.kt$CallManager$onCallEnded: (CallType) -&gt; Unit</ID>
+    <ID>UnusedParameter:QRScannerActivity.kt$QRScannerActivity$intent: Intent</ID>
+    <ID>UnusedPrivateProperty:CallOverlayService.kt$CallOverlayService.Companion$// How long "Sending your payment request…" shows before the overlay // explains that the PIN is entered on the bank's call, not here. private const val STEP_PIN_NOTICE_DELAY_MS = 2500L</ID>
+    <ID>UnusedPrivateProperty:MainActivity.kt$var activeNavTab by remember { mutableStateOf(0) }</ID>
+    <ID>UseCheckOrError:DatabaseEncryptionMigrator.kt$DatabaseEncryptionMigrator$throw IllegalStateException("Could not move encrypted database into place")</ID>
+    <ID>WildcardImport:NotificationsDialog.kt$import com.netless.app.ui.theme.*</ID>
+    <ID>WildcardImport:ProfileDialog.kt$import com.netless.app.ui.theme.*</ID>
+    <ID>WildcardImport:SetupActivity.kt$import com.netless.app.ui.theme.*</ID>
+    <ID>WildcardImport:TestConfigurationActivity.kt$import com.netless.app.ui.theme.*</ID>
+  </CurrentIssues>
+</SmellBaseline>
